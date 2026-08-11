@@ -19,7 +19,6 @@ async function writeName() {
 
 function main() {
   writeName();
-  projectsOver();
 }
 
 window.addEventListener("load", main);
