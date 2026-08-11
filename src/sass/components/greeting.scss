@@ -6,7 +6,7 @@ $greeting-padding: 5vw;
 
 #greeting {
   min-height: $greeting-height;
-  background: url("../../galaxy.jpg") no-repeat fixed right center;
+  background: url("../../galaxy.jpg") no-repeat fixed center center;
   background-size: cover;
   padding: $greeting-padding;
   &-content {
