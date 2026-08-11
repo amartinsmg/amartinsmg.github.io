@@ -1,0 +1,18 @@
+@use "variables" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html, body {
+  font: v.$font-1;
+  line-height: 135%;
+  color: v.$primary-color;
+  background-color: v.$bg-color-1;
+  @media screen and (min-width: 1024px) {
+    font-size: 18px;
+  }
+}
