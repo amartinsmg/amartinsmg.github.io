@@ -42,6 +42,7 @@ $greeting-padding: 5vw;
       flex-direction: row;
       &-text {
         height: inherit;
+        max-width: 32rem;
         justify-content: center;
         &-heading {
           font-size: 2.5rem;
