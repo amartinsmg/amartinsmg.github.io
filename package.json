@@ -1,15 +1,12 @@
 {
   "name": "amartinsmg",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "My personal portifolio",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack serve"
+    "build": "vite build",
+    "dev": "vite"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amartinsmg/Portifolio.git"
-  },
+  "repository": "git+https://github.com/amartinsmg/Portifolio.git",
   "keywords": [
     "portifolio"
   ],
@@ -20,21 +17,7 @@
   },
   "homepage": "https://amartinsmg.github.io",
   "devDependencies": {
-    "@babel/core": "^7.18.6",
-    "@babel/preset-env": "^7.18.6",
-    "babel-loader": "^8.2.5",
-    "css-loader": "^6.7.1",
-    "css-minimizer-webpack-plugin": "^4.0.0",
-    "html-loader": "^4.1.0",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.6.1",
-    "sass": "^1.53.0",
-    "sass-loader": "^13.0.2",
-    "template-ejs-loader": "^0.9.3",
-    "ts-loader": "^9.3.1",
-    "typescript": "^4.7.4",
-    "webpack": "^5.73.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.9.3"
+    "sass": "^1.102.0",
+    "vite": "^8.2.1"
   }
 }
