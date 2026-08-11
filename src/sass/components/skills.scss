@@ -1,15 +1,15 @@
-@import "../variables";
-@import "../mixins";
+@use "../variables" as v;
+@use "../mixins" as m;
 
 .skills {
-  @include f-col;
+  @include m.f-col;
   justify-content: center;
-  min-height: $greeting-height;
+  min-height: v.$greeting-height;
   padding: 5%;
   gap: 5vh;
   &-heading {
-    color: $secondary-color;
-    font: $font-3;
+    color: v.$secondary-color;
+    font: v.$font-3;
     font-size: 1.4rem;
     @media screen and (min-width: 768px) {
       text-align: center;
@@ -20,16 +20,16 @@
       display: none;
     }
     &-labels {
-      @include f-row;
+      @include m.f-row;
       justify-content: center;
       gap: 1rem;
       padding: 1rem 0;
       &-label {
-        color: $neutral-color-2;
+        color: v.$neutral-color-2;
         font-size: 1.5rem;
         cursor: pointer;
         &:hover {
-          color: $neutral-color-1;
+          color: v.$neutral-color-1;
         }
       }
     }
@@ -43,10 +43,10 @@
         gap: 0.5rem;
         text-align: center;
         &-heading {
-          color: $secondary-color;
+          color: v.$secondary-color;
         }
         &-code {
-          font: $font-2;
+          font: v.$font-2;
         }
       }
     }
@@ -63,9 +63,9 @@
   }
 }
 
-@include showSkill("html");
-@include showSkill("css");
-@include showSkill("javascript");
-@include showSkill("c");
-@include showSkill("python");
-@include showSkill("sqlite");
+@include m.showSkill("html");
+@include m.showSkill("css");
+@include m.showSkill("javascript");
+@include m.showSkill("c");
+@include m.showSkill("python");
+@include m.showSkill("sqlite");

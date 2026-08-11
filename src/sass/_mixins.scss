@@ -1,3 +1,5 @@
+@use "variables" as v;
+
 @mixin f-row {
   display: flex;
   flex-direction: row;
@@ -13,14 +15,14 @@
   position: absolute;
   width: 2rem;
   height: 0.25rem;
-  background-color: $primary-color;
+  background-color: v.$primary-color;
   margin: $mt 0 0.3rem;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 @mixin showSkill($name) {
   #radio-#{$name}:checked ~ .skills-content-labels [for="radio-#{$name}"] {
-    color: $secondary-color;
+    color: v.$secondary-color;
   }
   #radio-#{$name}:checked ~ .skills-content-text #text-#{$name} {
     display: flex;

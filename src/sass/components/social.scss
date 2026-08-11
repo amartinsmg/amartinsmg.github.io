@@ -1,16 +1,16 @@
-@import "../mixins";
-@import "../variables";
+@use "../mixins" as m;
+@use "../variables" as v;
 
 #social {
   &-div {
-    @include f-row;
+    @include m.f-row;
     justify-content: center;
     margin-top: -1rem;
     padding-bottom: 3rem;
     gap: 1.4rem;
     font-size: 1.8rem;
     .social-div-inner:hover {
-      color: $neutral-color-2;
+      color: v.$neutral-color-2;
     }
   }
 }

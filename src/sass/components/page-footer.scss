@@ -1,4 +1,4 @@
-@import "../variables";
+@use "../variables" as v;
 
 #page-footer {
   width: 90%;
@@ -11,17 +11,17 @@
       padding: 0 0 0.2rem;
     }
     a:hover {
-      color: $neutral-color-2;
+      color: v.$neutral-color-2;
     }
   }
   &-bar {
     height: 1px;
     width: 60%;
     margin: 0 auto;
-    background-color: $primary-color;
+    background-color: v.$primary-color;
   }
   &-bottom {
-    min-height: $greeting-height;
+    min-height: v.$greeting-height;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +35,7 @@
     }
     &-phrase {
       &-latin {
-        font: $font-4;
+        font: v.$font-4;
         font-size: 1.7em;
         padding: 0 0 0.8rem;
       }

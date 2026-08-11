@@ -1,16 +1,16 @@
-@import "../variables";
-@import "../mixins";
+@use "../variables" as v;
+@use "../mixins" as m;
 
-$greeting-height: calc(100vh - $header-height);
+$greeting-height: calc(100vh - v.$header-height);
 $greeting-padding: 5vw;
 
 #greeting {
   min-height: $greeting-height;
-  background: url("../../public/galaxy.jpg") no-repeat fixed right center;
+  background: url("../../galaxy.jpg") no-repeat fixed right center;
   background-size: cover;
   padding: $greeting-padding;
   &-content {
-    @include f-col;
+    @include m.f-col;
     justify-content: center;
     gap: 2.5rem;
     align-items: center;
@@ -19,17 +19,17 @@ $greeting-padding: 5vw;
     padding: 1rem;
     background: #00000080;
     &-text {
-      @include f-col;
+      @include m.f-col;
       gap: 0.8rem;
       &-heading {
-        font: $font-3;
+        font: v.$font-3;
         font-size: 1.8rem;
         &-text-cursor {
           display: inline-block;
           height: 1em;
           width: 0.05em;
           margin: 0 0 -0.1em 0.1em;
-          background-color: $primary-color;
+          background-color: v.$primary-color;
         }
       }
     }

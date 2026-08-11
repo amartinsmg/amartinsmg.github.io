@@ -1,12 +1,12 @@
-@import "../mixins";
-@import "../variables";
+@use "../mixins" as m;
+@use "../variables" as v;
 
 #projects {
   &-text {
     padding-bottom: 1.5rem;
   }
   &-grid {
-    @include f-col;
+    @include m.f-col;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -17,34 +17,34 @@
         max-width: 100%;
       }
       &-inner {
-        @include f-col;
+        @include m.f-col;
         justify-content: center;
         align-items: center;
         text-align: center;
         padding: 0.2rem 0;
         gap: 0.8rem;
         &-heading {
-          color: $secondary-color;
+          color: v.$secondary-color;
         }
         &-btn {
           width: fit-content;
-          background-color: $bg-color-2;
-          color: $primary-color;
+          background-color: v.$bg-color-2;
+          color: v.$primary-color;
           &:hover {
-            background-color: $bg-color-4;
+            background-color: v.$bg-color-4;
           }
         }
       }
       @media screen and (pointer: fine) {
         position: relative;
         #project-grid-1-img {
-          content: url("../../public/qfcalculator_square.png");
+          content: url("../../qfcalculator_square.png");
         }
         #project-grid-2-img {
-          content: url("../../public/periodic_table_square.png");
+          content: url("../../periodic_table_square.png");
         }
         #project-grid-3-img {
-          content: url("../../public/descrip_statis_square.png");
+          content: url("../../descrip_statis_square.png");
         }
         &-img {
           aspect-ratio: 1 / 1;

@@ -1,11 +1,11 @@
-@import "../variables";
+@use "../variables" as v;
 
 .container {
   padding: 2rem 0;
   width: 90%;
   margin: auto;
   &-heading {
-    font: $font-3;
+    font: v.$font-3;
     font-size: 1.6rem;
     @media screen and (min-width: 768px) {
       text-align: center;

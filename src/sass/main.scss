@@ -1,4 +1,8 @@
-@import "variables";
+@use "variables" as v;
+
+@use "elements";
+@use "components";
+
 
 * {
   margin: 0;
@@ -8,20 +12,8 @@
 }
 
 html, body {
-  font: $font-1;
+  font: v.$font-1;
   font-size: 20px;
-  color: $primary-color;
-  background-color: $bg-color-1;
+  color: v.$primary-color;
+  background-color: v.$bg-color-1;
 }
-
-@import "elements/a";
-@import "elements/btn";
-@import "elements/container";
-@import "elements/display-none";
-
-@import "components/page-header";
-@import "components/greeting";
-@import "components/about";
-@import "components/projects";
-@import "components/social";
-@import "components/page-footer";
