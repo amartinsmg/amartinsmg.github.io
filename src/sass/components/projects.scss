@@ -28,37 +28,11 @@
         }
         &-btn {
           width: fit-content;
-          background-color: v.$bg-color-2;
+          background-color: v.$bg-color-1;
           color: v.$primary-color;
           &:hover {
-            background-color: v.$bg-color-4;
+            background-color: v.$bg-color-3;
           }
-        }
-      }
-      @media screen and (pointer: fine) {
-        position: relative;
-        #project-grid-1-img {
-          content: url("../../qfcalculator_square.png");
-        }
-        #project-grid-2-img {
-          content: url("../../periodic_table_square.png");
-        }
-        #project-grid-3-img {
-          content: url("../../descrip_statis_square.png");
-        }
-        &-img {
-          aspect-ratio: 1 / 1;
-          object-fit: cover;
-        }
-        &-inner {
-          position: absolute;
-          width: 86%;
-          height: 86%;
-          top: 7%;
-          right: 7%;
-          padding: 5%;
-          gap: 1.3rem;
-          background-color: #000000dd;
         }
       }
     }

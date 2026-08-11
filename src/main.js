@@ -17,26 +17,6 @@ async function writeName() {
   TextCursor.classList.add("blinker-effect");
 }
 
-function projectsOver() {
-  if (
-    !matchMedia("(pointer: fine)").matches
-  )
-    return void 0;
-  const projectDivs = document.querySelectorAll(
-    ".projects-div"
-  );
-  projectDivs.forEach((el) => {
-    const elInner = el.lastElementChild;
-    elInner.classList.add("display-none");
-    el.addEventListener("mouseover", () => {
-      elInner.classList.remove("display-none");
-    });
-    el.addEventListener("mouseleave", () => {
-      elInner.classList.add("display-none");
-    });
-  });
-}
-
 function main() {
   writeName();
   projectsOver();
