@@ -36,6 +36,8 @@
     &-text {
       &-box {
         height: 100%;
+        max-width: 50rem;
+        margin: auto;
         padding: 2%;
         display: none;
         flex-direction: column;
@@ -46,6 +48,7 @@
           color: v.$secondary-color;
         }
         &-code {
+          margin: 0.5rem auto auto;
           font: v.$font-2;
         }
       }
@@ -63,9 +66,9 @@
   }
 }
 
-@include m.showSkill("html");
-@include m.showSkill("css");
-@include m.showSkill("javascript");
+@include m.showSkill("java");
 @include m.showSkill("c");
 @include m.showSkill("python");
-@include m.showSkill("sqlite");
+@include m.showSkill("javascript");
+@include m.showSkill("postgresql");
+@include m.showSkill("cuda");
