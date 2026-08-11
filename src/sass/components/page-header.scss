@@ -75,7 +75,7 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background: v.$bg-color-2;
+        background: v.$bg-color-3;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
         &:hover {
           background: v.$neutral-color-4;
@@ -100,7 +100,7 @@
           padding: 0 1rem;
           background: transparent;
           &:hover {
-            background: v.$bg-color-3;
+            background: v.$neutral-color-5;
           }
         }
       }
