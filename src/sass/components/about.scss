@@ -1,4 +1,7 @@
+@use "../variables" as v;
+
 #about {
+  max-width: v.$text-max-width;
   margin: 1rem auto auto;
 }
 

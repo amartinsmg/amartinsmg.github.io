@@ -36,7 +36,7 @@
     &-text {
       &-box {
         height: 100%;
-        max-width: 50rem;
+        max-width: v.$text-max-width;
         margin: auto;
         padding: 2%;
         display: none;
