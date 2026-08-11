@@ -11,7 +11,7 @@ async function writeName() {
   WhoIAmEl.textContent = "";
   TextCursor.classList.remove("blinker-effect");
   for (let char of Str) {
-    await new Promise((resolve) => setInterval(resolve, 400));
+    await new Promise((resolve) => setInterval(resolve, 200));
     WhoIAmEl.textContent += char;
   }
   TextCursor.classList.add("blinker-effect");
