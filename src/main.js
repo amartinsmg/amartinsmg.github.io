@@ -1,13 +1,13 @@
 import "./sass/main.scss";
 
-async function writeName(): Promise<void> {
+async function writeName() {
   const WhoIAmEl = document.querySelector(
-      "#greeting-content-text-heading-whoiam"
-    ) as HTMLElement,
+    "#greeting-content-text-heading-whoiam"
+  ),
     TextCursor = document.querySelector(
       "#greeting-content-text-heading-text-cursor"
-    ) as HTMLElement,
-    Str = WhoIAmEl.textContent as string;
+    ),
+    Str = WhoIAmEl.textContent;
   WhoIAmEl.textContent = "";
   TextCursor.classList.remove("blinker-effect");
   for (let char of Str) {
@@ -17,16 +17,16 @@ async function writeName(): Promise<void> {
   TextCursor.classList.add("blinker-effect");
 }
 
-function projectsOver(): void {
+function projectsOver() {
   if (
-    !matchMedia("(pointer: fine)").matches 
+    !matchMedia("(pointer: fine)").matches
   )
     return void 0;
   const projectDivs = document.querySelectorAll(
     ".projects-div"
-  ) as NodeListOf<HTMLElement>;
+  );
   projectDivs.forEach((el) => {
-    const elInner = el.lastElementChild as HTMLElement;
+    const elInner = el.lastElementChild;
     elInner.classList.add("display-none");
     el.addEventListener("mouseover", () => {
       elInner.classList.remove("display-none");
