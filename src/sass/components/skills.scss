@@ -8,12 +8,7 @@
   padding: 5%;
   gap: 5vh;
   &-heading {
-    color: v.$secondary-color;
-    font: v.$font-3;
-    font-size: 1.4rem;
-    @media screen and (min-width: 768px) {
-      text-align: center;
-    }
+    @include m.heading-3;
   }
   &-content {
     &-radio {

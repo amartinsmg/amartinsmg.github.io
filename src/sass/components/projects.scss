@@ -5,31 +5,43 @@
   &-text {
     padding-bottom: 1.5rem;
   }
+
   &-grid {
     @include m.f-col;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap: 2rem;
+
     .projects-div {
       width: 18rem;
       max-width: 100%;
+
       &-img {
         max-width: 100%;
       }
+
       &-inner {
         @include m.f-col;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: c;
         padding: 0.4rem 0;
         gap: 0.6rem;
+
         &-heading {
-          color: v.$secondary-color;
+          @include m.heading-3;
         }
+
+        &-topics {
+          text-align: center;
+          font: v.$font-2;
+        }
+
         &-btn {
           width: fit-content;
           background-color: v.$bg-color-2;
           color: v.$primary-color;
+
           &:hover {
             background-color: v.$bg-color-4;
           }
@@ -37,18 +49,21 @@
       }
     }
   }
+
   @media screen and (min-width: 1024px) {
     &-grid {
       display: grid;
       gap: 1.5rem;
       grid-template: 1fr 1fr / 1fr 1fr;
     }
+
     .projects-div {
       height: 100%;
       @include m.f-col;
       justify-content: space-between;
     }
   }
+
   @media screen and (min-width: 1360px) {
     &-grid {
       grid-template: 1fr / 1fr 1fr 1fr;

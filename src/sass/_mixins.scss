@@ -10,6 +10,16 @@
   flex-direction: column;
 }
 
+@mixin heading-3 {
+  color: v.$secondary-color;
+  font: v.$font-3;
+  font-size: 1.4rem;
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+}
+
 @mixin menu-bars($mt: 0.3rem) {
   display: block;
   position: absolute;
@@ -21,10 +31,11 @@
 }
 
 @mixin showSkill($name) {
-  #radio-#{$name}:checked ~ .skills-content-labels [for="radio-#{$name}"] {
+  #radio-#{$name}:checked~.skills-content-labels [for="radio-#{$name}"] {
     color: v.$secondary-color;
   }
-  #radio-#{$name}:checked ~ .skills-content-text #text-#{$name} {
+
+  #radio-#{$name}:checked~.skills-content-text #text-#{$name} {
     display: flex;
   }
 }
