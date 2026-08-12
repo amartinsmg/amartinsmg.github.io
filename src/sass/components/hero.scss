@@ -6,9 +6,10 @@ $hero-padding: 5vw;
 
 #hero {
   min-height: $hero-height;
-  background: url("../../galaxy.jpg") no-repeat fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../galaxy.jpg") no-repeat fixed center center;
   background-size: cover;
   padding: $hero-padding;
+
   &-content {
     @include m.f-col;
     justify-content: center;
@@ -17,13 +18,17 @@ $hero-padding: 5vw;
     min-height: calc($hero-height - $hero-padding * 2);
     width: 100%;
     padding: 1rem;
-    background: #000000B0;
+    background: #00000090;
+    backdrop-filter: blur(4px);
+
     &-text {
       @include m.f-col;
       gap: 0.8rem;
+
       &-heading {
         font: v.$font-3;
         font-size: 1.8rem;
+
         &-text-cursor {
           display: inline-block;
           height: 1em;
@@ -33,17 +38,21 @@ $hero-padding: 5vw;
         }
       }
     }
+
     &-fig {
       height: 15rem;
       max-width: 100%;
       object-fit: scale-down;
     }
+
     @media screen and (min-width: 768px) {
       flex-direction: row;
+
       &-text {
         height: inherit;
         max-width: 32rem;
         justify-content: center;
+
         &-heading {
           font-size: 2.5rem;
         }
