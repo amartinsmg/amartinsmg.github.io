@@ -7,27 +7,33 @@
   min-height: v.$hero-height;
   padding: 5%;
   gap: 5vh;
+
   &-heading {
     @include m.heading-3;
   }
+
   &-content {
     &-radio {
       display: none;
     }
+
     &-labels {
       @include m.f-row;
       justify-content: center;
       gap: 1rem;
       padding: 1rem 0;
+
       &-label {
         color: v.$neutral-color-2;
         font-size: 1.5rem;
         cursor: pointer;
+
         &:hover {
           color: v.$neutral-color-1;
         }
       }
     }
+
     &-text {
       &-box {
         height: 100%;
@@ -39,9 +45,11 @@
         justify-content: center;
         gap: 0.5rem;
         text-align: justify;
+
         &-heading {
           color: v.$secondary-color;
         }
+
         &-code {
           margin: 0.5rem auto auto;
           font: v.$font-2;
@@ -49,15 +57,26 @@
       }
     }
   }
+
   @media screen and (min-width: 412px) {
     min-height: 30rem;
   }
+
   @media screen and (min-width: 576px) {
     min-height: 24rem;
     gap: 2rem;
   }
+
   @media screen and (min-width: 810px) {
     min-height: 0;
+
+    &-content-labels {
+      gap: 3rem;
+
+      &-label {
+        font-size: 2rem;
+      }
+    }
   }
 }
 
