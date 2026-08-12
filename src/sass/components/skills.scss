@@ -4,7 +4,7 @@
 .skills {
   @include m.f-col;
   justify-content: center;
-  min-height: v.$greeting-height;
+  min-height: v.$hero-height;
   padding: 5%;
   gap: 5vh;
   &-heading {

@@ -2,10 +2,10 @@ import "./sass/main.scss";
 
 async function writeName() {
   const WhoIAmEl = document.querySelector(
-    "#greeting-content-text-heading-whoiam"
+    "#hero-content-text-heading-whoiam"
   ),
     TextCursor = document.querySelector(
-      "#greeting-content-text-heading-text-cursor"
+      "#hero-content-text-heading-text-cursor"
     ),
     Str = WhoIAmEl.textContent;
   WhoIAmEl.textContent = "";

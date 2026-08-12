@@ -1,23 +1,23 @@
 @use "../variables" as v;
 @use "../mixins" as m;
 
-$greeting-height: calc(100vh - v.$header-height);
-$greeting-padding: 5vw;
+$hero-height: calc(100vh - v.$header-height);
+$hero-padding: 5vw;
 
-#greeting {
-  min-height: $greeting-height;
+#hero {
+  min-height: $hero-height;
   background: url("../../galaxy.jpg") no-repeat fixed center center;
   background-size: cover;
-  padding: $greeting-padding;
+  padding: $hero-padding;
   &-content {
     @include m.f-col;
     justify-content: center;
     gap: 2.5rem;
     align-items: center;
-    min-height: calc($greeting-height - $greeting-padding * 2);
+    min-height: calc($hero-height - $hero-padding * 2);
     width: 100%;
     padding: 1rem;
-    background: #00000080;
+    background: #000000B0;
     &-text {
       @include m.f-col;
       gap: 0.8rem;
