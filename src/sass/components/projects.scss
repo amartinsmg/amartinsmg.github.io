@@ -46,9 +46,16 @@
             background-color: v.$bg-color-4;
           }
         }
+
+        &-bar {
+          @include m.separator-bar;
+          width: min(12rem, 60%);
+          margin: 2.25rem auto;
+        }
       }
     }
   }
+
 
   @media screen and (min-width: 1024px) {
     &-grid {
@@ -61,6 +68,10 @@
       height: 100%;
       @include m.f-col;
       justify-content: space-between;
+
+      &-inner-bar {
+        display: none;
+      }
     }
   }
 

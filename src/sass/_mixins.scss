@@ -30,6 +30,11 @@
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+@mixin separator-bar {
+  height: 1px;
+  background-color: v.$neutral-color-3;
+}
+
 @mixin showSkill($name) {
   #radio-#{$name}:checked~.skills-content-labels [for="radio-#{$name}"] {
     color: v.$secondary-color;

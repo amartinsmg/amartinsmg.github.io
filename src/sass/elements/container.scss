@@ -1,7 +1,8 @@
 @use "../variables" as v;
+@use "../mixins" as m;
 
 .container {
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   width: 90%;
   margin: auto;
 
@@ -22,6 +23,10 @@
     text-justify: distribute;
     line-height: 150%;
 
+    &-center {
+      text-align: center;
+    }
+
     &-center-md {
       @media screen and (min-width: 768px) {
         text-align: center;
@@ -29,9 +34,16 @@
     }
   }
 
+
   @media screen and (min-width: 768px) {
     padding: 2.5rem 0;
     width: 80%;
+
+    &-bar {
+      @include m.separator-bar;
+      width: min(30rem, 60%);
+      margin: 0 auto;
+    }
   }
 
   @media screen and (min-width: 1024px) {
