@@ -14,10 +14,7 @@
   color: v.$secondary-color;
   font: v.$font-3;
   font-size: 1.4rem;
-
-  @media screen and (min-width: 768px) {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 @mixin menu-bars($mt: 0.3rem) {

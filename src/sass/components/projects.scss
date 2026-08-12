@@ -60,8 +60,9 @@
   @media screen and (min-width: 1024px) {
     &-grid {
       display: grid;
-      gap: 1.5rem;
       grid-template: 1fr 1fr / 1fr 1fr;
+      gap: 1.5rem;
+      place-items: center;
     }
 
     .projects-div {

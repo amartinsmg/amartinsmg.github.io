@@ -1,21 +1,18 @@
 @use "../variables" as v;
 @use "../mixins" as m;
 
-$hero-height: calc(100vh - v.$header-height);
-$hero-padding: 5vw;
-
 #hero {
-  min-height: $hero-height;
+  min-height: v.$hero-height;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../galaxy.jpg") no-repeat fixed center center;
   background-size: cover;
-  padding: $hero-padding;
+  padding: v.$hero-v-padding 5vw;
 
   &-content {
     @include m.f-col;
     justify-content: center;
     gap: 2.5rem;
     align-items: center;
-    min-height: calc($hero-height - $hero-padding * 2);
+    min-height: calc(v.$hero-height - v.$hero-v-padding * 2);
     width: 100%;
     padding: 1rem;
     background: #00000090;
