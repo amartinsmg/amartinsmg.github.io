@@ -7,23 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>André Martins</title>
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script type="module" crossorigin src="./assets/index-DAGLSu6J.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-QGBdyGNY.css">
+  <script type="module" crossorigin src="./assets/index-z8fp8oM3.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BPTxWWot.css">
 </head>
 
 <body>
   <header id="page-header">
   <div>
-    <a href="#greeting" title="Home">
-      <img
-        id="page-header-logo"
-        src="../monogram-light.png"
-        alt="coat of arms with a lion, surrounded by a laurel wreath and a crown above"
-      />
+    <a href="#hero" title="Home">
+      <img id="page-header-logo" src="../logo-light.png" alt="logo" />
     </a>
   </div>
   <nav id="page-header-navbar">
@@ -32,255 +28,226 @@
       <div id="page-header-navbar-menu-icon"></div>
     </label>
     <ul id="page-header-navbar-ul">
-      <li>
-        <a href="#greeting">Home</a>
-      </li>
-      <li>
-        <a href="#about">About</a>
-      </li>
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-      <li>
-        <a href="#social">Social</a>
-      </li>
+      <a href="#hero">
+        <li>Home</li>
+      </a>
+      <a href="#about">
+        <li>About</li>
+      </a>
+      <a href="#skills">
+        <li>My skills</li>
+      </a>
+      <a href="#projects">
+        <li>Projects</li>
+      </a>
+      <a href="#social">
+        <li>Social</li>
+      </a>
     </ul>
   </nav>
 </header>
-
   <main>
-    <div class="container-fluid" id="greeting">
-  <section id="greeting-content">
-    <div id="greeting-content-text">
-      <h1 id="greeting-content-text-heading">
-        <span id="greeting-content-text-heading-whoiam">I'm André Martins</span
-        ><i
-          id="greeting-content-text-heading-text-cursor"
-          class="blinker-effect"
-        ></i>
+    <div class="container-fluid" id="hero">
+  <section id="hero-content">
+    <div id="hero-content-text">
+      <h1 id="hero-content-text-heading">
+        <span id="hero-content-text-heading-whoiam">Hi, I'm André Martins.</span><i
+          id="hero-content-text-heading-text-cursor" class="blinker-effect"></i>
       </h1>
-      <p>I'm a web developer and computer engineering student...</p>
+      <p>
+        Backend systems, performance, and software engineering.
+      </p>
+      <p>
+        Computer Engineering student focused on building efficient and reliable software.
+      </p>
     </div>
-    <img
-      src="../programmer.png"
-      alt="Programmer figure"
-      id="greeting-content-fig"
-    />
+    <img src="../emblem-light.png" alt="emblem" id="hero-content-fig" />
   </section>
 </div>
-
     <section id="about" class="container">
   <h2 class="container-heading" id="about-heading">About</h2>
-  <p class="container-text" id="about-text">
-    ...I'm seeking my first opportunity in the technology field, with skills in
-    web development (HTML5, CSS3, SASS, JavaScript ES6+, TypeScript) and
-    PostgreSQL database. Although lacking professional experience, I have
-    acquired knowledge through personal projects. Stay updated and committed to
-    best development practices, I prioritize clean and readable code. Determined
-    to grow and contribute to collaborative teams, I am ready to tackle
-    challenges and make a difference in the technology industry.
-  </p>
+  <div class="container-text" id="about-text">
+    <p>
+      I'm a Computer Engineering student focused on backend
+      development, systems, algorithms, and computational
+      performance.
+    </p>
+    <p>
+      My current focus is backend development with Java,
+      while exploring the interaction between higher-level
+      applications and lower-level systems through projects
+      involving C, native libraries, HTTP APIs, databases,
+      and computational workloads.
+    </p>
+    <p>
+      I enjoy understanding the fundamentals behind the
+      abstractions I use...
+    </p>
+  </div>
 </section>
-
-    <div class="skills">
-  <h3 class="skills-heading">Main skills</h3>
+<div class="container-bar"></div>
+    <section id="skills" class="container skills">
+  <h2 class="container-heading" id="about-heading">My skills</h2>
   <div class="skills-content">
-    <input
-      type="radio"
-      class="skills-content-radio"
-      name="skill"
-      id="radio-html"
-      checked
-    />
-    <input
-      type="radio"
-      class="skills-content-radio"
-      name="skill"
-      id="radio-css"
-    />
-    <input
-      type="radio"
-      class="skills-content-radio"
-      name="skill"
-      id="radio-javascript"
-    />
-    <input
-      type="radio"
-      class="skills-content-radio"
-      name="skill"
-      id="radio-c"
-    />
-    <input
-      type="radio"
-      class="skills-content-radio"
-      name="skill"
-      id="radio-python"
-    />
-    <input
-      type="radio"
-      class="skills-content-radio"
-      name="skill"
-      id="radio-sqlite"
-    />
+    <input type="radio" class="skills-content-radio" name="skill" id="radio-java" checked />
+    <input type="radio" class="skills-content-radio" name="skill" id="radio-c" />
+    <input type="radio" class="skills-content-radio" name="skill" id="radio-python" />
+    <input type="radio" class="skills-content-radio" name="skill" id="radio-javascript" />
+    <input type="radio" class="skills-content-radio" name="skill" id="radio-postgresql" />
+    <input type="radio" class="skills-content-radio" name="skill" id="radio-cuda" />
     <div class="skills-content-labels">
-      <label class="skills-content-labels-label" for="radio-html"
-        ><i class="devicon-html5-plain" title="HTML5"></i
-      ></label>
-      <label class="skills-content-labels-label" for="radio-css"
-        ><i class="devicon-css3-plain" title="CSS3/ SCSS"></i
-      ></label>
-      <label class="skills-content-labels-label" for="radio-javascript"
-        ><i class="devicon-javascript-plain" title="JavaScript/ TypeScript"></i
-      ></label>
-      <label class="skills-content-labels-label" for="radio-c"
-        ><i class="devicon-c-plain" title="C"></i
-      ></label>
-      <label class="skills-content-labels-label" for="radio-python"
-        ><i class="devicon-python-plain" title="Python"></i
-      ></label>
-      <label class="skills-content-labels-label" for="radio-sqlite"
-        ><i class="devicon-sqlite-plain" title="SQLite"></i
-      ></label>
+      <label class="skills-content-labels-label" for="radio-java"><i class="devicon-java-plain"
+          title="Java"></i></label>
+      <label class="skills-content-labels-label" for="radio-c"><i class="devicon-c-plain" title="C / C++"></i></label>
+      <label class="skills-content-labels-label" for="radio-python"><i class="devicon-python-plain"
+          title="Python"></i></label>
+      <label class="skills-content-labels-label" for="radio-javascript"><i class="devicon-javascript-plain"
+          title="JavaScript/ TypeScript"></i></label>
+      <label class="skills-content-labels-label" for="radio-postgresql"><i class="devicon-postgresql-plain"
+          title="SQL"></i></label>
+      <label class="skills-content-labels-label" for="radio-cuda"><i class="devicon-llvm-plain"
+          title="CUDA"></i></label>
     </div>
     <div class="skills-content-text">
-      <div class="skills-content-text-box" id="text-html">
-        <h4 class="skills-content-text-box-heading">HTML5</h4>
+      <div class="skills-content-text-box" id="text-java">
+        <h3 class="skills-heading">Java</h3>
         <p>
-          The HyperText Markup Language or HTML is the standard markup language
-          for Web pages. It defines the structure of web content using semantic
-          elements defined by tags, like headings, paragraphs, and sections, and
-          allows inserting multimedia content, like images and videos. Its
-          latest version is HTML5.
+          My current focus for backend development. I use Java to build HTTP APIs, handle JSON data, structure
+          application logic, and explore backend development without relying heavily on frameworks. I also work with
+          Java Native Access (JNA) to integrate Java applications with native C libraries.
         </p>
-        <code class="skills-content-text-box-code"
-          >&lt;h1&gt;Hey Jude&lt;/h1&gt;</code
-        >
-      </div>
-      <div class="skills-content-text-box" id="text-css">
-        <h4 class="skills-content-text-box-heading">CSS3/ SCSS</h4>
-        <p>
-          The Cascading Style Sheets or CSS is a style sheet language used for
-          describing the formatting of a document written in a markup language,
-          such as HTML. It's widely used in Web pages, defining, among other
-          things, their layout, colors, and fonts. Its latest version is CSS3.
-          SCSS is a syntax of SASS (Syntactically Awesome StyleSheets) that is a
-          superset of CSS, adding to it some features.
-        </p>
-        <code class="skills-content-text-box-code">h1 { color: red; }</code>
-      </div>
-      <div class="skills-content-text-box" id="text-javascript">
-        <h4 class="skills-content-text-box-heading">JavaScript/ TypeScript</h4>
-        <p>
-          JavaScript is a high-level, multi-paradigm, just-in-time compiled
-          programming language. It is used by 98% of websites because it has an
-          <abbr title="Application Programming Interface">API</abbr> for working
-          with HTML Document Object Model, allowing add interactivity to it. All
-          modern web browsers have a JS engine. It also is used for server-side
-          programming with Node.js or Deno. Typescript is a superset of
-          Javascript, adding to it new features, like static typing, interfaces,
-          and namespaces.
-        </p>
-        <code class="skills-content-text-box-code"
-          >console.log("Hey Jude");</code
-        >
+        <code class="skills-content-text-box-code">System.out.println("Building backend systems.");</code>
       </div>
       <div class="skills-content-text-box" id="text-c">
-        <h4 class="skills-content-text-box-heading">C/ C++</h4>
+        <h3 class="skills-heading">C / C++</h3>
         <p>
-          C is a high-level, general-purpose, procedural programming language,
-          and C++ is an extension of C with object-oriented programming
-          features. Both provide low-level memory access and can run natively
-          with minimal runtime support. Therefore, they are widely used for
-          system programming, like operating systems, databases, compilers, and
-          embedded.
+          I use C to explore lower-level programming, mathematical algorithms, memory behavior, file I/O, shared
+          libraries, and database interaction. I also use C as a foundation for experiments involving performance and
+          system-level behavior.
         </p>
-        <code class="skills-content-text-box-code">printf("Hey Jude\n");</code>
+        <code class="skills-content-text-box-code">printf("Understanding how systems work.\n");</code>
       </div>
       <div class="skills-content-text-box" id="text-python">
-        <h4 class="skills-content-text-box-heading">Python</h4>
+        <h3 class="skills-heading">Python</h3>
         <p>
-          Python is a high-level, general-purpose, multi-paradigm, interpreted
-          programming language. It was designed to be simple and readable. It's
-          present in data science, automation scripts, web development, machine
-          learning algorithms, scientific computing and much more.
+          I use Python for numerical computing, data processing, experimentation, and machine learning. My projects
+          include scientific computing and analysis using libraries such as NumPy, Pandas, SciPy, and TensorFlow.
         </p>
-        <code class="skills-content-text-box-code">print('Hey Jude')</code>
+        <code class="skills-content-text-box-code">print("Exploring computational problems.")</code>
       </div>
-      <div class="skills-content-text-box" id="text-sqlite">
-        <h4 class="skills-content-text-box-heading">SQLite</h4>
+      <div class="skills-content-text-box" id="text-javascript">
+        <h3 class="skills-heading">Javascript / TypeScript</h3>
         <p>
-          SQLite3 is a small, fast, self-contained, full-featured relational
-          database engine. It is widely used in embedded systems, mobile phone
-          applications, web browsers, and many other applications. It is also
-          bindings to many programming languages.
+          I use JavaScript and TypeScript for web applications, application logic, and interactive interfaces. My
+          experience also includes structuring applications with object-oriented and domain-oriented approaches.
         </p>
-        <code class="skills-content-text-box-code">SELECT * FROM skills;</code>
+        <code class="skills-content-text-box-code">console.log("Building and experimenting.");</code>
+      </div>
+      <div class="skills-content-text-box" id="text-postgresql">
+        <h3 class="skills-heading">Databases</h3>
+        <p>
+          I work with relational databases and SQL, particularly PostgreSQL and SQLite. My projects explore database
+          interaction, persistence, query execution, transactions, and different strategies for writing data
+          efficiently.
+        </p>
+        <code class="skills-content-text-box-code">SELECT * FROM experiments;</code>
+      </div>
+      <div class="skills-content-text-box" id="text-cuda">
+        <h3 class="skills-heading">Performance & Systems</h3>
+        <p>
+          I’m interested in understanding how software interacts with the underlying system and how implementation
+          choices affect runtime, memory, I/O, database operations, and computational performance.
+        </p>
+        <p>
+          I explore these concepts through benchmarking and experimentation involving CPU execution, OpenMP, CUDA, file
+          I/O, database transactions, batching, and different programming language runtimes.
+        </p>
+        <code class="skills-content-text-box-code">computation → execution → I/O → system behavior → performance</code>
       </div>
     </div>
   </div>
-</div>
-
+</section>
+<div class="container-bar"></div>
     <section class="container" id="projects">
   <h2 class="container-heading" id="projects-heading">Projects</h2>
-  <p class="container-text" id="projects-text">These are some of my personal projects: </p>
+  <p class="container-text container-text-center-md" id="projects-text">These are some of my personal projects: </p>
   <div id="projects-grid">
     <div class="projects-div" id="project-grid-1">
-      <img class="projects-div-img" src="../qfcalculator.png" id="project-grid-1-img"
+      <img class="projects-div-img" src="../mathlib-api.png
+      " id="project-grid-1-img" alt="print screen of MathLib API">
+      <div class="projects-div-inner">
+        <h3 class="projects-div-inner-heading">MathLib API</h3>
+        <p>A lightweight HTTP API built with Java, exposing a native mathematical library written in C through JNA.
+        </p>
+        <span class="projects-div-inner-topics"><strong>Java · JNA · HTTP · JSON · Docker</strong></span>
+      </div>
+      <div class="projects-div-inner">
+        <a class="btn projects-div-inner-btn" target="_blank" href="https://github.com/amartinsmg/MathlibAPI"
+          role="button"><i class="fab fa-github"></i> Complete project</a>
+      </div>
+      <div class="projects-div-inner-bar"></div>
+    </div>
+    <div class="projects-div" id="project-grid-2">
+      <img class="projects-div-img" src="../cnn-comparasion.png" id="project-grid-2-img"
+        alt="print screen of CNN Architecture Comparison">
+      <div class="projects-div-inner">
+        <h3 class="projects-div-inner-heading">CNN Architecture Comparison</h3>
+        <p>My Computer Engineering thesis comparing ResNet50, DenseNet121, and EfficientNetB0 for pneumonia
+          classification using transfer learning and controlled experiments.
+        </p>
+        <span class="projects-div-inner-topics"><strong>TypeScript · OOP · Architecture · Symbolic Computation</strong>
+          </sapn>
+      </div>
+      <div class="projects-div-inner">
+        <a class="btn projects-div-inner-btn" target="_blank"
+          href="https://github.com/amartinsmg/classification-of-medical-images-using-cnn" role="button"><i
+            class="fab fa-github"></i> Complete project</a>
+      </div>
+      <div class="projects-div-inner-bar"></div>
+    </div>
+    <div class="projects-div" id="project-grid-3">
+      <img class="projects-div-img" src="../qfcalculator.png" id="project-grid-3-img"
         alt="print screen of Qudratic Function Calculator">
       <div class="projects-div-inner">
-        <h4 class="projects-div-inner-heading">Quadratic Function Calculator</h4>
-        <p>It is a personal project that uses Embedded JavaScript (EJS), CSS, TypeScript, Babel, and Webpack.
+        <h3 class="projects-div-inner-heading">Quadratic Function Calculator</h3>
+        <p>A TypeScript web application redesigned around OOP and domain-oriented architecture, separating mathematical
+          logic from UI and visualization.
         </p>
+        <span class="projects-div-inner-topics"><strong>TypeScript · OOP · Architecture · Symbolic
+            Computation</strong></span>
+      </div>
+      <div class="projects-div-inner">
         <a class="btn projects-div-inner-btn" target="_blank" href="https://github.com/amartinsmg/QuadraticFCalculator"
           role="button"><i class="fab fa-github"></i> Complete project</a>
       </div>
     </div>
-    <div class="projects-div" id="project-grid-2">
-      <img class="projects-div-img" src="../periodic_table.png" id="project-grid-2-img"
-        alt="print screen of Periodic Table">
-      <div class="projects-div-inner">
-        <h4 class="projects-div-inner-heading">Periodic Table</h4>
-        <p>It is a personal project that uses Embedded JavaScript (EJS), SASS, JavaScript,
-          Babel, and Webpack.
-        </p>
-        <a class="btn projects-div-inner-btn" target="_blank" href="https://github.com/amartinsmg/PeriodicTable"
-          role="button"><i class="fab fa-github"></i> Complete project</a>
-        </div>
-      </div>
-      <div class="projects-div" id="project-grid-3">
-        <img class="projects-div-img" src="../descrip_statis.png" id="project-grid-3-img"
-        alt="print screen of Descriptive Statistics Calculator">
-        <div class="projects-div-inner">
-          <h4 class="projects-div-inner-heading">Descriptive Statistics Calculator</h4>
-          <p>It is a personal project that uses HTML, CSS, Bootstrap 5, TypeScript, Web Assembly, Babel,
-            and Webpack.
-          </p>
-          <a class="btn projects-div-inner-btn" target="_blank" href="https://github.com/amartinsmg/DescriptiveStatistics"
-            role="button"><i class="fab fa-github"></i> Complete project</a>
-      </div>
-    </div>
 </section>
     <section class="container" id="social">
-  <h2 class="container-heading" id="social-heading">Social</h2>
-  <p class="container-text" id="social-text">Connect with me:</p>
-  <div id="social-div">
-    <div class="social-div-inner">
-      <a target="_blank" href="https://github.com/amartinsmg" title="Github"
-        ><i class="fab fa-github"></i
-      ></a>
+  <div id="social-top">
+    <div id="social-top-monogram">
+      <img src="../monogram-light.png" alt="monogram" />
     </div>
-    <div class="social-div-inner">
-      <a
-        target="_blank"
-        href="https://linkedin.com/in/amartinsmg"
-        title="LikedIn"
-        ><i class="fab fa-linkedin"></i
-      ></a>
+    <div id="social-top-phrase">
+      <p id="social-top-phrase-latin">Per aspera ad astra</p>
+      <p id="social-top-phrase-translation">
+        &#8220;Through hardships to the stars&#8221;
+      </p>
     </div>
-    <div class="social-div-inner">
-      <a target="_blank" href="https://t.me/amartinsmg" title="Telegram"
-        ><i class="fab fa-telegram"></i
-      ></a>
+      <div id="social-bar"></div>
+    <div>
+      <p class="container-text container-text-center" id="social-text">Connect with me:</p>
+      <div id="social-div">
+        <div class="social-div-inner">
+          <a target="_blank" href="https://github.com/amartinsmg" title="Github"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="social-div-inner">
+          <a target="_blank" href="https://linkedin.com/in/amartinsmg" title="LikedIn"><i
+              class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="social-div-inner">
+          <a target="_blank" href="https://t.me/amartinsmg" title="Telegram"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -289,46 +256,15 @@
   <footer id="page-footer">
   <div id="page-footer-text">
     <p id="page-footer-text-made-by">
-      <a
-        target="_blank"
-        href="https://github.com/amartinsmg/amartinsmg.github.io"
-        >Visit this project's repository</a
-      >.
-      <a target="_blank" href="https://github.com/amartinsmg"
-        >Made by amartinsmg</a
-      >.
+      <a target="_blank" href="https://github.com/amartinsmg/amartinsmg.github.io">Visit this project's repository</a>.
+      <a target="_blank" href="https://github.com/amartinsmg">Made by amartinsmg</a>.
     </p>
     <p>
-      <small
-        ><a
-          target="_blank"
-          href="https://www.pexels.com/pt-br/foto/milk-way-2706654/"
-          >Galaxy picture by Nicole Avagliano on Pexels</a
-        >.</small
-      >
+      <small><a target="_blank" href="https://science.nasa.gov/asset/webb/circinus-galaxy-hubble-and-webb/">Circinus
+          Galaxy picture by NASA, ESA, e A. Wilson (University of Maryland)</a>.</small>
     </p>
-    <p>
-      <small>
-        <a target="_blank" href="https://storyset.com/web"
-          >Programmer illustration by Storyset</a
-        >.</small
-      >
-    </p>
-  </div>
-  <div id="page-footer-bar"></div>
-  <div id="page-footer-bottom">
-    <div id="page-footer-bottom-emblem">
-      <img src="../emblem-light.png" alt="Emblem" />
-    </div>
-    <div id="page-footer-bottom-phrase">
-      <p id="page-footer-bottom-phrase-latin">Per aspera ad astra</p>
-      <p id="page-footer-bottom-phrase-translation">
-        &#8220;Through hardships to the stars&#8221;
-      </p>
-    </div>
   </div>
 </footer>
-
 </body>
 
 </html>
