@@ -3,7 +3,7 @@
 
 .skills {
   @include m.f-col;
-  justify-content: center;
+  justify-content: start;
   min-height: v.$hero-height;
   padding: 5%;
   gap: 5vh;
@@ -20,12 +20,12 @@
     &-labels {
       @include m.f-row;
       justify-content: center;
-      gap: 1rem;
+      gap: 1.8rem;
       padding: 1rem 0;
 
       &-label {
         color: v.$neutral-color-2;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         cursor: pointer;
 
         &:hover {
@@ -53,23 +53,23 @@
         &-code {
           margin: 0.5rem auto auto;
           font: v.$font-2;
+          text-align: left;
         }
       }
     }
   }
 
   @media screen and (min-width: 412px) {
-    min-height: 30rem;
+    min-height: 32rem;
   }
 
   @media screen and (min-width: 576px) {
-    min-height: 24rem;
+    min-height: 28rem;
     gap: 2rem;
   }
 
   @media screen and (min-width: 810px) {
-    min-height: 0;
-
+    min-height: 30rem;
     &-content-labels {
       gap: 3rem;
 
@@ -77,6 +77,10 @@
         font-size: 2rem;
       }
     }
+  }
+
+  @media screen and (min-width: 1024px) {
+    min-height: 33rem;
   }
 }
 
