@@ -2,7 +2,7 @@
 
 #page-footer {
   width: 90%;
-  margin: 0 5%;
+  margin: 0 auto;
   text-align: center;
   &-text {
     font-size: 0.7rem;
@@ -12,36 +12,6 @@
     }
     a:hover {
       color: v.$neutral-color-2;
-    }
-  }
-  &-bar {
-    height: 1px;
-    width: 60%;
-    margin: 0 auto;
-    background-color: v.$primary-color;
-  }
-  &-bottom {
-    min-height: v.$greeting-height;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 4rem 0;
-    gap: 2rem;
-    &-monogram {
-      img {
-        margin: 0 auto;
-        width: min(15rem, 100%);
-      }
-    }
-    &-phrase {
-      &-latin {
-        font: v.$font-4;
-        font-size: 1.7em;
-        padding: 0 0 0.8rem;
-      }
-      &-translation {
-        font-size: 0.9em;
-      }
     }
   }
 }

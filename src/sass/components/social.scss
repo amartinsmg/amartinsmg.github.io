@@ -2,6 +2,45 @@
 @use "../variables" as v;
 
 #social {
+  width: 90%;
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+
+  &-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 0;
+    gap: 2rem;
+
+    &-monogram {
+      img {
+        margin: 0 auto;
+        width: min(10rem, 100%);
+      }
+    }
+
+    &-phrase {
+      &-latin {
+        font: v.$font-4;
+        font-size: 1.7em;
+        padding: 0 0 0.8rem;
+      }
+
+      &-translation {
+        font-size: 0.9em;
+        padding: 0 0 3rem;
+      }
+    }
+  }
+
+  &-bar {
+    @include m.separator-bar;
+    width: min(30rem, 60%);
+    margin: 0 auto;
+  }
+
   &-div {
     @include m.f-row;
     justify-content: center;
@@ -9,6 +48,7 @@
     padding-bottom: 3rem;
     gap: 1.4rem;
     font-size: 1.8rem;
+
     .social-div-inner:hover {
       color: v.$neutral-color-2;
     }
