@@ -61,16 +61,16 @@
   }
 
   @media screen and (min-width: 412px) {
-    min-height: 32rem;
+    min-height: 35rem;
   }
 
   @media screen and (min-width: 576px) {
-    min-height: 28rem;
+    min-height: 29rem;
     gap: 2rem;
   }
 
-  @media screen and (min-width: 810px) {
-    min-height: 30rem;
+  @media screen and (min-width: 768px) {
+    min-height: 31rem;
 
     &-content-labels {
       gap: 3rem;
@@ -86,7 +86,7 @@
   }
 
   @media screen and (min-width: 1920px) {
-    min-height: 35rem;
+    min-height: 36rem;
   }
 }
 
