@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600&family=Roboto:ital,wght@0,300;0,400;1,70&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
 $header-height: 3rem;
 
@@ -17,15 +19,15 @@ $neutral-color-5: #343434;
 $neutral-color-6: #0B0C0D;
 
 $bg-color-1: $neutral-color-6;
-$bg-color-2: #014983;
+$bg-color-2: #2b2b2b;
 $bg-color-3: #1f1f1f;
-$bg-color-4: #01345e;
+$bg-color-4: $neutral-color-4;
 
 $primary-color: $neutral-color-0;
-$secondary-color: #028DF6;
+$secondary-color: #48affd;
 
-$font-1: normal 300 1em 'Roboto', sans-serif;
-$font-2: normal 500 1em 'Inconsolata', monospace;
-$font-3: normal 600 1em 'Inconsolata', monospace;
-$font-4: italic 700 1em 'Roboto', sans-serif;
-
+$font-1: normal 300 1em 'Montserrat', sans-serif;
+$font-2: normal 300 1em 'Inconsolata', monospace;
+$font-3: normal 400 1em 'Inconsolata', monospace;
+$font-4: normal 600 1em 'Inconsolata', monospace;
+$font-5: normal 500 1em "Cormorant Garamond", serif;

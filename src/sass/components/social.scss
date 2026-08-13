@@ -8,7 +8,7 @@
   @include m.f-col;
   justify-content: center;
   text-align: center;
-  
+
   &-top {
     @include m.f-col;
     justify-content: center;
@@ -17,19 +17,21 @@
     &-monogram {
       img {
         margin: 0 auto;
-        width: min(10rem, 100%);
+        width: min(15rem, 100%);
       }
     }
 
     &-phrase {
       &-latin {
-        font: v.$font-4;
-        font-size: 1.7em;
+        font: v.$font-5;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        letter-spacing: 0.2em;
         padding: 0 0 0.8rem;
       }
-
+      
       &-translation {
-        font-size: 0.9em;
+        font: v.$font-2;
         padding: 0 0 3rem;
       }
     }
@@ -41,16 +43,56 @@
     margin: 0 auto;
   }
 
-  &-div {
-    @include m.f-row;
-    justify-content: center;
-    margin-top: -1rem;
-    padding-bottom: 3rem;
-    gap: 1.4rem;
-    font-size: 1.8rem;
+  &-bottom {
+    @include m.f-col;
+    min-height: 10rem;
+    justify-content: space-between;
+    gap: 4em;
+    font: v.$font-3;
+    
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template: 1fr / 1fr 1fr;
+      text-align: start;
+    }
 
-    .social-div-inner:hover {
-      color: v.$neutral-color-2;
+    &-name {
+      @include m.f-col;
+      justify-content: center;
+      gap: 0.5em;
+
+      &-title {
+        color: v.$neutral-color-2;
+      }
+    }
+
+    &-nav {
+      @include m.f-row;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      button {
+        @include m.f-row;
+        background-color: inherit;
+        border: 0;
+        color: inherit;
+        font: inherit;
+        align-items: center;
+        gap: 0.2em;
+        
+        cursor: pointer;
+        i {
+          font-size: 1.5rem;
+        }
+      }
+
+
+    }
+
+    a:hover {
+      color: v.$neutral-color-3;
     }
   }
+
 }

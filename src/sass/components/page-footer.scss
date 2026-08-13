@@ -4,12 +4,16 @@
   width: 90%;
   margin: 0 auto;
   text-align: center;
+  font: v.$font-2;
+
   &-text {
     font-size: 0.7rem;
     padding: 0 0 2rem;
+
     &-made-by {
       padding: 0 0 0.2rem;
     }
+
     a:hover {
       color: v.$neutral-color-2;
     }

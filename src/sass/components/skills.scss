@@ -54,6 +54,7 @@
           margin: 0.5rem auto auto;
           font: v.$font-2;
           text-align: left;
+          letter-spacing: 0.04m;
         }
       }
     }
@@ -70,6 +71,7 @@
 
   @media screen and (min-width: 810px) {
     min-height: 30rem;
+
     &-content-labels {
       gap: 3rem;
 
@@ -81,6 +83,10 @@
 
   @media screen and (min-width: 1024px) {
     min-height: 33rem;
+  }
+
+  @media screen and (min-width: 1920px) {
+    min-height: 35rem;
   }
 }
 
