@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script type="module" crossorigin src="./assets/index-BD2m-GzH.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-C-371aO0.css">
+  <script type="module" crossorigin src="./assets/index-CfRWKkXm.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BEfMuzt7.css">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
         <li>About</li>
       </a>
       <a href="#skills">
-        <li>My skills</li>
+        <li>Skills</li>
       </a>
       <a href="#projects">
         <li>Projects</li>
@@ -87,7 +87,7 @@
 </section>
 <div class="container-bar"></div>
     <section id="skills" class="container skills">
-  <h2 class="container-heading" id="about-heading">My skills</h2>
+  <h2 class="container-heading" id="about-heading">Skills</h2>
   <div class="skills-content">
     <input type="radio" class="skills-content-radio" name="skill" id="radio-java" checked />
     <input type="radio" class="skills-content-radio" name="skill" id="radio-c" />
@@ -179,11 +179,11 @@
         <h3 class="projects-div-inner-heading">MathLib API</h3>
         <p>A lightweight HTTP API built with Java, exposing a native mathematical library written in C through JNA.
         </p>
-        <span class="projects-div-inner-topics"><strong>Java · JNA · HTTP · JSON · Docker</strong></span>
+        <span class="projects-div-inner-topics">Java · JNA · HTTP · JSON · Docker</span>
       </div>
       <div class="projects-div-inner">
         <a class="btn projects-div-inner-btn" target="_blank" href="https://github.com/amartinsmg/MathlibAPI"
-          role="button"><i class="fab fa-github"></i> Complete project</a>
+          role="button"><i class="fab fa-github"></i> View project</a>
       </div>
       <div class="projects-div-inner-bar"></div>
     </div>
@@ -195,13 +195,13 @@
         <p>My Computer Engineering thesis comparing ResNet50, DenseNet121, and EfficientNetB0 for pneumonia
           classification using transfer learning and controlled experiments.
         </p>
-        <span class="projects-div-inner-topics"><strong>TypeScript · OOP · Architecture · Symbolic Computation</strong>
+        <span class="projects-div-inner-topics">Python · TensorFlow · CNN · Data Analysis · DVC
           </sapn>
       </div>
       <div class="projects-div-inner">
         <a class="btn projects-div-inner-btn" target="_blank"
           href="https://github.com/amartinsmg/classification-of-medical-images-using-cnn" role="button"><i
-            class="fab fa-github"></i> Complete project</a>
+            class="fab fa-github"></i> View project</a>
       </div>
       <div class="projects-div-inner-bar"></div>
     </div>
@@ -213,12 +213,11 @@
         <p>A TypeScript web application redesigned around OOP and domain-oriented architecture, separating mathematical
           logic from UI and visualization.
         </p>
-        <span class="projects-div-inner-topics"><strong>TypeScript · OOP · Architecture · Symbolic
-            Computation</strong></span>
+        <span class="projects-div-inner-topics">TypeScript · OOP · Architecture · Symbolic Computation</span>
       </div>
       <div class="projects-div-inner">
         <a class="btn projects-div-inner-btn" target="_blank" href="https://github.com/amartinsmg/QuadraticFCalculator"
-          role="button"><i class="fab fa-github"></i> Complete project</a>
+          role="button"><i class="fab fa-github"></i> View project</a>
       </div>
     </div>
 </section>
@@ -235,18 +234,21 @@
     </div>
   </div>
   <div id="social-bar"></div>
-  <div id="social-bottom">
-    <p class="container-text container-text-center" id="social-text">Connect with me:</p>
-    <div id="social-div">
-      <div class="social-div-inner">
-        <a target="_blank" href="https://github.com/amartinsmg" title="Github"><i class="fab fa-github"></i></a>
-      </div>
-      <div class="social-div-inner">
-        <a target="_blank" href="https://linkedin.com/in/amartinsmg" title="LikedIn"><i class="fab fa-linkedin"></i></a>
-      </div>
-      <div class="social-div-inner">
-        <a target="_blank" href="https://t.me/amartinsmg" title="Telegram"><i class="fab fa-telegram"></i></a>
-      </div>
+  <div id="social-bottom" class="container">
+    <div id="social-bottom-name">
+      <a target="_blank" href="https://github.com/amartinsmg"><p>André Martins</p></a>
+      <p id="social-bottom-name-title">Computer Engineering</p>
+    </div>
+    <div id="social-bottom-nav">
+      <a target="_blank" href="https://github.com/amartinsmg" title="Github"><button class="social-nav-inner">
+          <i class="fab fa-github"></i> <span> GitHub</span>
+        </button></a>
+      <a target="_blank" href="https://linkedin.com/in/amartinsmg" title="LikedIn"><button class="social-nav-inner">
+          <i class="fab fa-linkedin"></i> <span> LinkedIn</span>
+        </button></a>
+      <a target="_blank" href="https://t.me/amartinsmg" title="Telegram"><button class="social-nav-inner">
+          <i class="fab fa-telegram"></i> <span> Telegram</span>
+        </button></a>
     </div>
   </div>
 </section>
@@ -254,8 +256,11 @@
   <footer id="page-footer">
   <div id="page-footer-text">
     <p id="page-footer-text-made-by">
-      <a target="_blank" href="https://github.com/amartinsmg/amartinsmg.github.io">Visit this project's repository</a>.
-      <a target="_blank" href="https://github.com/amartinsmg">Made by amartinsmg</a>.
+      <small>
+        <a target="_blank" href="https://github.com/amartinsmg">Made by amartinsmg</a>.
+        <a target="_blank" href="https://github.com/amartinsmg/amartinsmg.github.io">Visit this project's
+          repository</a>.
+      </small>
     </p>
     <p>
       <small><a target="_blank" href="https://science.nasa.gov/asset/webb/circinus-galaxy-hubble-and-webb/">Circinus
