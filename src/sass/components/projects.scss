@@ -57,7 +57,7 @@
   }
 
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     &-grid {
       display: grid;
       grid-template: 1fr 1fr / 1fr 1fr;
@@ -76,7 +76,7 @@
     }
   }
 
-  @media screen and (min-width: 1360px) {
+  @media screen and (min-width: 1200px) {
     &-grid {
       grid-template: 1fr / 1fr 1fr 1fr;
     }
