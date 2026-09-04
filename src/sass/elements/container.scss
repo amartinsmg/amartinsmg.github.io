@@ -2,23 +2,26 @@
 @use "../mixins" as m;
 
 .container {
-  padding: 2.5rem 0;
   width: 90%;
   margin: auto;
+  padding: 3.5rem 0;
+
+  @include m.f-col;
+  gap: 1rem;
 
   &-heading {
     font: v.$font-4;
     font-size: 1.6rem;
-
-    @media screen and (min-width: 768px) {
-      text-align: center;
-      font-size: 2rem;
-      padding: 0.5rem 0;
-    }
   }
 
   &-text {
-    padding: 2.5rem 0;
+    max-width: v.$text-max-width;
+    width: 100%;
+    margin: 0 auto;
+
+    @include m.f-col;
+    gap: .5rem;
+
     text-align: justify;
     text-justify: distribute;
     line-height: 150%;
@@ -27,17 +30,22 @@
       text-align: center;
     }
 
-    &-center-md {
-      @media screen and (min-width: 768px) {
-        text-align: center;
-      }
-    }
   }
 
 
   @media screen and (min-width: 768px) {
-    padding: 2.5rem 0;
     width: 80%;
+    padding: 3.5rem 0;
+    gap: 2rem;
+
+    &-heading {
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    &-text-center-md {
+      text-align: center;
+    }
 
     &-bar {
       @include m.separator-bar;
@@ -46,7 +54,8 @@
     }
   }
 
-  @media screen and (min-width: 1024px) {
-    padding: 3.5rem 0;
+  @media screen and (min-width: 992px) {
+    padding: 5.5rem 0;
+    gap: 3rem;
   }
 }

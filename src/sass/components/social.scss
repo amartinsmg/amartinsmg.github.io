@@ -2,15 +2,14 @@
 @use "../variables" as v;
 
 #social {
-  width: 90%;
   min-height: v.$hero-height;
-  margin: 0 auto;
+
   @include m.f-col;
   justify-content: center;
+
   text-align: center;
 
   &-top {
-    @include m.f-col;
     justify-content: center;
     gap: 2rem;
 
@@ -22,17 +21,19 @@
     }
 
     &-phrase {
+      @include m.f-col;
+      justify-content: start;
+      gap: 0.8rem;
+
       &-latin {
         font: v.$font-5;
         text-transform: uppercase;
         font-size: 1.2em;
         letter-spacing: 0.2em;
-        padding: 0 0 0.8rem;
       }
 
       &-translation {
         font: v.$font-2;
-        padding: 0 0 3rem;
       }
     }
   }
@@ -40,24 +41,21 @@
   &-bar {
     @include m.separator-bar;
     width: min(30rem, 60%);
-    margin: 0 auto;
+    margin: 3.5rem auto;
   }
 
   &-bottom {
     @include m.f-col;
-    min-height: 10rem;
-    justify-content: space-between;
+    justify-content: start;
+    align-items: center;
     gap: 4em;
+
     font: v.$font-3;
 
-    @media screen and (min-width: 768px) {
-      flex-direction: row;
-      justify-content: center;
-      text-align: end;
-    }
+
 
     a:hover {
-      color: v.$neutral-color-3;
+      color: v.$second-color;
     }
 
     &-name {
@@ -72,19 +70,19 @@
 
     &-nav {
       @include m.f-row;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       gap: 2rem;
 
-
       .social-nav-inner {
         @include m.f-row;
-        background-color: inherit;
-        border: 0;
-        color: inherit;
-        font: inherit;
         align-items: center;
         gap: 0.2em;
+
+        background-color: inherit;
+        color: inherit;
+        font: inherit;
+
         cursor: pointer;
       }
 
@@ -92,4 +90,44 @@
 
   }
 
+  @media screen and (min-width: 768px) {
+    padding: 0 0 v.$header-height;
+
+    &-bottom {
+      flex-direction: row;
+      justify-content: center;
+
+      text-align: end;
+    }
+  }
+
+  @media screen and (992px < width < 1400px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &-top {
+      width: 25rem;
+    }
+
+    &-bar {
+      width: 1px;
+      height: 15rem;
+      margin: auto 0;
+    }
+
+    &-bottom {
+      width: fit-content;
+      margin: 0;
+
+      justify-content: start;
+      gap: 2rem;
+
+      text-align: start;
+
+      &-nav {
+        justify-content: start;
+      }
+    }
+  }
 }

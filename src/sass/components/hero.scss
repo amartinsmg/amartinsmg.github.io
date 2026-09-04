@@ -3,18 +3,21 @@
 
 #hero {
   min-height: v.$hero-height;
+  padding: v.$hero-v-padding 5vw;
+  
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../galaxy.jpg") no-repeat fixed center center;
   background-size: cover;
-  padding: v.$hero-v-padding 5vw;
 
   &-content {
     @include m.f-col;
     justify-content: center;
-    gap: 2.5rem;
     align-items: center;
+    gap: 2.5rem;
+
     min-height: calc(v.$hero-height - v.$hero-v-padding * 2);
     width: 100%;
     padding: 1rem;
+
     background: #00000060;
     backdrop-filter: blur(4px);
 
@@ -48,6 +51,7 @@
       &-text {
         height: inherit;
         max-width: 32rem;
+
         justify-content: center;
 
         &-heading {

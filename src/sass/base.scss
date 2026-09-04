@@ -9,10 +9,7 @@
 
 html, body {
   font: v.$font-1;
-  line-height: 135%;
+  line-height: 150%;
   color: v.$primary-color;
   background-color: v.$bg-color-1;
-  @media screen and (min-width: 1400px) {
-    font-size: 18px;
-  }
 }

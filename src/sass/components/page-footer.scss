@@ -3,19 +3,17 @@
 #page-footer {
   width: 90%;
   margin: 0 auto;
+  padding: 0 0 2rem;
+
   text-align: center;
   font: v.$font-2;
+  font-size: 0.75rem;
 
-  &-text {
-    font-size: 0.7rem;
-    padding: 0 0 2rem;
+  a:hover {
+    color: v.$second-color;
+  }
 
-    &-made-by {
-      padding: 0 0 0.2rem;
-    }
-
-    a:hover {
-      color: v.$neutral-color-2;
-    }
+  &-text-made-by {
+    margin: 0 0 0.5em;
   }
 }

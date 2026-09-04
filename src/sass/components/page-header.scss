@@ -5,103 +5,124 @@
   @include m.f-row;
   justify-content: space-between;
   align-items: center;
+
   position: sticky;
   top: 0;
+  z-index: 1;
+
   width: 100%;
   height: v.$header-height;
   padding: 0 2rem;
+
   background-color: v.$bg-color-1;
   font: v.$font-3;
-  z-index: 1;
+
   &-logo {
     height: 2.5rem;
   }
+
   &-navbar {
     &-toggle {
       display: none;
     }
-    &-toggle:checked + &-menu &-menu-icon {
+
+    &-toggle:checked+&-menu &-menu-icon {
       background: transparent;
+
       &::before {
         margin-top: 0;
         transform: rotate(-45deg);
       }
+
       &::after {
         margin-top: 0;
         transform: rotate(45deg);
       }
     }
-    &-toggle:checked ~ &-ul {
+
+    &-toggle:checked~&-ul {
       li {
         height: 2.5rem;
         font-size: 1.1rem;
         padding: 0.5rem;
       }
+
       li:not(:first-child) {
         border-top: solid 0.1rem v.$neutral-color-3;
       }
     }
+
     &-menu {
       @include m.f-col;
       cursor: pointer;
       height: 100%;
       justify-content: center;
       align-items: center;
+
       &-icon {
         @include m.menu-bars;
+
         &::before {
           content: "";
           @include m.menu-bars(-0.5rem);
         }
+
         &::after {
           content: "";
           @include m.menu-bars(0.5rem);
         }
       }
     }
+
     &-ul {
       @include m.f-col;
       position: absolute;
-      width: 100%;
       top: 0;
       left: 0;
+      width: 100%;
       margin-top: v.$header-height;
       list-style: none;
+
       li {
         @include m.f-row;
         justify-content: center;
         align-items: center;
+
         height: 0;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background: v.$bg-color-3;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+
+        background: v.$bg-color-3;
+
         &:hover {
-          background: v.$neutral-color-4;
+          color: v.$second-color;
         }
       }
     }
   }
+
   @media screen and (min-width: 768px) {
     justify-content: space-around;
+
     &-navbar {
       &-menu {
         display: none;
       }
+
       &-ul {
         position: static;
-        flex-direction: row;
-        height: 100%;
         margin: 0;
+
+        flex-direction: row;
+        gap: 2rem;
+
         background: transparent;
+
         li {
           height: v.$header-height;
-          padding: 0 1rem;
           background: transparent;
-          &:hover {
-            background: v.$neutral-color-5;
-          }
         }
       }
     }

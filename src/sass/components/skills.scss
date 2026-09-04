@@ -1,88 +1,78 @@
 @use "../variables" as v;
 @use "../mixins" as m;
 
-.skills {
+#skills {
   @include m.f-col;
   justify-content: start;
-  min-height: 35rem;
-  padding: 5%;
-  gap: 5vh;
-
-  &-heading {
-    @include m.heading-3;
-  }
 
   &-content {
-    &-radio {
-      display: none;
+    @include m.f-col;
+    gap: 2.5rem;
+
+    .skill-radio {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
     }
 
     &-labels {
-      @include m.f-row;
-      justify-content: center;
-      gap: 1.8rem;
-      padding: 1rem 0;
+      margin: 0 auto;
 
-      &-label {
+      display: grid;
+      grid-template: 1fr 1fr / 1fr 1fr 1fr;
+      place-items: center;
+      gap: 3rem;
+
+      .skill-label {
         color: v.$neutral-color-2;
-        font-size: 1.8rem;
+        font-size: 2.5rem;
+
         cursor: pointer;
 
         &:hover {
           color: v.$neutral-color-1;
         }
       }
+
+      @media screen and (min-width: 768px) {
+        @include m.f-row;
+        justify-content: center;
+      }
     }
 
-    &-text {
-      &-box {
-        height: 100%;
-        max-width: v.$text-max-width;
-        margin: auto;
-        padding: 2%;
+    &-cards {
+      min-height: 23rem;
+
+      .skill-card {
         display: none;
+
         flex-direction: column;
         justify-content: center;
-        gap: 0.5rem;
-        text-align: justify;
+        gap: 1.5rem;
 
         &-heading {
-          color: v.$secondary-color;
+          @include m.heading-3;
         }
 
         &-code {
-          margin: 0.5rem auto auto;
           font: v.$font-2;
-          text-align: left;
-          letter-spacing: 0.04m;
+          text-align: center;
+          letter-spacing: 0.04em;
         }
       }
-    }
-  }
 
-  @media screen and (min-width: 576px) {
-    min-height: 29rem;
-    gap: 2rem;
-  }
+      @media screen and (min-width: 576px) {
+        min-height: 19rem;
+      }
 
-  @media screen and (min-width: 768px) {
-    min-height: 31rem;
+      @media screen and (min-width: 768px) {
+        min-height: 16rem;
+      }
 
-    &-content-labels {
-      gap: 3rem;
-
-      &-label {
-        font-size: 2rem;
+      @media screen and (min-width: 992px) {
+        min-height: 15rem;
       }
     }
-  }
-
-  @media screen and (min-width: 992px) {
-    min-height: 33rem;
-  }
-
-  @media screen and (min-width: 1400px) {
-    min-height: 36rem;
   }
 }
 

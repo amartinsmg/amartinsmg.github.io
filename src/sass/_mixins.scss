@@ -11,7 +11,7 @@
 }
 
 @mixin heading-3 {
-  color: v.$secondary-color;
+  color: v.$second-color;
   font: v.$font-3;
   font-size: 1.4rem;
   text-align: center;
@@ -19,12 +19,14 @@
 
 @mixin menu-bars($mt: 0.3rem) {
   display: block;
+
   position: absolute;
   width: 2rem;
   height: 0.25rem;
-  background-color: v.$primary-color;
   margin: $mt 0 0.3rem;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+
+  background-color: v.$primary-color;
 }
 
 @mixin separator-bar {
@@ -33,11 +35,11 @@
 }
 
 @mixin showSkill($name) {
-  #radio-#{$name}:checked~.skills-content-labels [for="radio-#{$name}"] {
-    color: v.$secondary-color;
+  #radio-#{$name}:checked~#skills-content-labels [for="radio-#{$name}"] {
+    color: v.$second-color;
   }
 
-  #radio-#{$name}:checked~.skills-content-text #text-#{$name} {
+  #radio-#{$name}:checked~#skills-content-cards #card-#{$name} {
     display: flex;
   }
 }

@@ -2,19 +2,18 @@
 @use "../variables" as v;
 
 #projects {
-  &-text {
-    padding-bottom: 1.5rem;
-  }
-
   &-grid {
     @include m.f-col;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
 
-    .projects-div {
+    .projects-card {
       width: 18rem;
       max-width: 100%;
+      
+      @include m.f-col;
+      justify-content: center;
+      gap: 0.8rem;
 
       &-img {
         max-width: 100%;
@@ -24,8 +23,6 @@
         @include m.f-col;
         justify-content: center;
         align-items: center;
-        text-align: c;
-        padding: 0.4rem 0;
         gap: 0.6rem;
 
         &-heading {
@@ -40,19 +37,20 @@
         &-btn {
           width: fit-content;
           background-color: v.$bg-color-2;
-          color: v.$primary-color;
-
+          
           &:hover {
-            background-color: v.$bg-color-4;
+            background-color: v.$bg-color-1;
+            color: v.$second-color;
+            border-color: v.$second-color;
           }
         }
-
-        &-bar {
-          @include m.separator-bar;
-          width: min(12rem, 60%);
-          margin: 2.25rem auto;
-        }
       }
+    }
+
+    .projects-divider {
+      @include m.separator-bar;
+      width: min(12rem, 60%);
+      margin: 3rem auto;
     }
   }
 
@@ -61,18 +59,18 @@
     &-grid {
       display: grid;
       grid-template: 1fr 1fr / 1fr 1fr;
-      gap: 1.5rem;
       place-items: center;
+      gap: 3rem;
     }
 
-    .projects-div {
+    .projects-card {
       height: 100%;
       @include m.f-col;
       justify-content: space-between;
+    }
 
-      &-inner-bar {
-        display: none;
-      }
+    .projects-divider {
+      display: none;
     }
   }
 
