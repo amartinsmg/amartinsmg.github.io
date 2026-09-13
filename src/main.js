@@ -1,6 +1,17 @@
 import "./sass/main.scss";
 
-async function writeName() {
+async function main() {
+
+  // Scroll to top button functionality
+
+  document.querySelectorAll('.to-top').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    });
+  });
+
+  // Write name animation functionality
+
   const WhoIAmEl = document.querySelector(
     "#hero-content-text-heading-whoiam"
   ),
@@ -15,10 +26,6 @@ async function writeName() {
     WhoIAmEl.textContent += char;
   }
   TextCursor.classList.add("blinker-effect");
-}
-
-function main() {
-  writeName();
 }
 
 window.addEventListener("load", main);
