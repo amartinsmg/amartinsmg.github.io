@@ -19,4 +19,4 @@ This is the source file of my personal portfolio.
 
 - **Source Code:** Available under the [MIT License](LICENSE).
 - **Content & Text:** Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-- **[Background Image](./public/galaxy.webp):** Circinus Galaxy photo courtesy of NASA, ESA, and A. Wilson (University of Maryland).
+- **[Background Image](./public/galaxy.webp):** Circinus Galaxy photo courtesy of NASA, ESA, CSA, Enrique Lopez-Rodriguez (University of South Carolina), Deepashri Thatte (STScI); Image Processing: Alyssa Pagan (STScI); Acknowledgment: NSF's NOIRLab, CTIO
