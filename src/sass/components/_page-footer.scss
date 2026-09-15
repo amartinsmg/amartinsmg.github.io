@@ -7,13 +7,12 @@
 
   text-align: center;
   font: v.$font-2;
-  font-size: 0.75rem;
+
+  small {
+    font-size: 0.75rem;
+  }
 
   a:hover {
     color: v.$second-color;
-  }
-
-  &-text-made-by {
-    margin: 0 0 0.5em;
   }
 }

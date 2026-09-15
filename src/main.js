@@ -1,6 +1,17 @@
 import "./sass/main.scss";
 
-async function main() {
+async function writeText(str, el, cursorEl) {
+  el.textContent = "";
+  if (cursorEl) cursorEl.classList.remove("blinker-effect");
+  for (let char of str) {
+    await new Promise((resolve) => setInterval(resolve, 200));
+    el.textContent += char;
+  }
+  if (cursorEl) cursorEl.classList.add("blinker-effect");
+}
+
+
+function main() {
 
   // Scroll to top button functionality
 
@@ -18,14 +29,9 @@ async function main() {
     TextCursor = document.querySelector(
       "#hero-content-text-heading-text-cursor"
     ),
-    Str = WhoIAmEl.textContent;
-  WhoIAmEl.textContent = "";
-  TextCursor.classList.remove("blinker-effect");
-  for (let char of Str) {
-    await new Promise((resolve) => setInterval(resolve, 200));
-    WhoIAmEl.textContent += char;
-  }
-  TextCursor.classList.add("blinker-effect");
+    str = "Hi, I'm André Martins.";
+
+  writeText(str, WhoIAmEl, TextCursor);
 }
 
 window.addEventListener("load", main);

@@ -33,13 +33,3 @@
   height: 1px;
   background-color: v.$neutral-color-3;
 }
-
-@mixin showSkill($name) {
-  #radio-#{$name}:checked~#skills-content-labels [for="radio-#{$name}"] {
-    color: v.$second-color;
-  }
-
-  #radio-#{$name}:checked~#skills-content-cards #card-#{$name} {
-    display: flex;
-  }
-}

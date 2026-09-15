@@ -68,15 +68,23 @@
     }
 
     &-nav {
-      @include m.f-row;
-      justify-content: space-around;
-      align-items: center;
-      gap: 2rem;
-
-      .social-nav-inner {
-        @include m.f-row;
+      @include m.f-col;
+      width: 100%;
+      
+      #social-nav-list {
+        
+        list-style: none;
+        
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         align-items: center;
-        gap: 0.2em;
+        gap: 2rem;
+
+        li {
+          display: inline-flex;
+          gap: 0.2em;
+        }
 
         background-color: inherit;
         color: inherit;
@@ -91,6 +99,7 @@
 
   @media screen and (min-width: 768px) {
     padding: 0 0 v.$header-height;
+    width: fit-content;
 
     &-bottom {
       flex-direction: row;

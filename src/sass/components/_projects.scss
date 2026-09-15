@@ -7,10 +7,10 @@
     justify-content: center;
     align-items: center;
 
-    .projects-card {
+    .project-card {
       width: 18rem;
       max-width: 100%;
-      
+
       @include m.f-col;
       justify-content: center;
       gap: 0.8rem;
@@ -19,25 +19,46 @@
         max-width: 100%;
       }
 
-      &-inner {
+      &-body,
+      &-footer {
         @include m.f-col;
         justify-content: center;
         align-items: center;
         gap: 0.6rem;
+      }
 
+      &-body {
         &-heading {
           @include m.heading-3;
         }
 
         &-topics {
-          text-align: center;
           font: v.$font-3;
+
+          list-style: none;
+
+          display: inline-flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          column-gap: 10px;
+
+          li {
+            display: inline-flex;
+          }
+
+          li:not(:last-child)::after {
+            content: " \22C5"; // middot
+            margin-left: 10px;
+          }
         }
 
+      }
+
+      &-footer {
         &-btn {
-          width: fit-content;
           background-color: v.$bg-color-2;
-          
+
           &:hover {
             background-color: v.$bg-color-1;
             color: v.$second-color;
@@ -63,7 +84,7 @@
       gap: 3rem;
     }
 
-    .projects-card {
+    .project-card {
       height: 100%;
       @include m.f-col;
       justify-content: space-between;
@@ -76,7 +97,7 @@
 
   @media screen and (min-width: 1200px) {
     &-grid {
-      grid-template: 1fr / 1fr 1fr 1fr;
+      grid-template: 1fr / repeat(3, 1fr);
     }
   }
 }

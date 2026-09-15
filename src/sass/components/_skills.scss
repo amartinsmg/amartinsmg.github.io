@@ -16,17 +16,17 @@
     }
 
     &-labels {
+      width: fit-content;
       margin: 0 auto;
 
       display: grid;
-      grid-template: 1fr 1fr / 1fr 1fr 1fr;
+      grid-template: 1fr 1fr / repeat(3, 1fr);
       place-items: center;
       gap: 3rem;
 
       .skill-label {
         color: v.$neutral-color-2;
         font-size: 2.5rem;
-
         cursor: pointer;
 
         &:hover {
@@ -41,7 +41,7 @@
     }
 
     &-cards {
-      min-height: 23rem;
+      min-height: 24rem;
 
       .skill-card {
         display: none;
@@ -58,6 +58,11 @@
           font: v.$font-2;
           text-align: center;
           letter-spacing: 0.04em;
+          text-wrap: inherit;
+
+          code {
+            font: inherit;
+          }
         }
       }
 
@@ -70,15 +75,25 @@
       }
 
       @media screen and (min-width: 992px) {
-        min-height: 15rem;
+        min-height: 16.5rem;
       }
     }
   }
 }
 
-@include m.showSkill("java");
-@include m.showSkill("c");
-@include m.showSkill("python");
-@include m.showSkill("javascript");
-@include m.showSkill("postgresql");
-@include m.showSkill("cuda");
+@mixin showSkill($name) {
+  #radio-#{$name}:checked~.skills-fieldset #skills-content-labels label[for="radio-#{$name}"] {
+    color: v.$second-color;
+  }
+
+  #radio-#{$name}:checked~#skills-content-cards #card-#{$name} {
+    display: flex;
+  }
+}
+
+@include showSkill("java");
+@include showSkill("c");
+@include showSkill("python");
+@include showSkill("javascript");
+@include showSkill("postgresql");
+@include showSkill("cuda");

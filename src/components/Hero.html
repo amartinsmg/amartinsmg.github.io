@@ -1,9 +1,19 @@
-<div class="container-fluid" id="hero">
-  <section id="hero-content">
+<header class="container-fluid" id="hero">
+  <div id="hero-content">
     <div id="hero-content-text">
       <h1 id="hero-content-text-heading">
-        <span id="hero-content-text-heading-whoiam">Hi, I'm André Martins.</span><i
-          id="hero-content-text-heading-text-cursor" class="blinker-effect"></i>
+
+        <!-- Static text for accessibility -->
+        <span class="sr-only">Hi, I'm André Martins.</span>
+
+        <!-- Dynamic text with typewriter effect -->
+        <span id="hero-content-text-heading-whoiam" aria-hidden="true"></span>
+
+        <!-- Fallback text for users with JavaScript disabled -->
+        <noscript>Hi, I'm André Martins.</noscript>
+
+        <!-- Cursor for typewriter effect -->
+        <i id="hero-content-text-heading-text-cursor" class="blinker-effect" aria-hidden="true"></i>
       </h1>
       <p>
         Backend systems, performance, and software engineering.
@@ -12,6 +22,6 @@
         Computer Engineering student focused on building efficient and reliable software.
       </p>
     </div>
-    <img src="../emblem-light.svg" alt="emblem" id="hero-content-fig" />
-  </section>
-</div>
+    <img src="../emblem-light.svg" alt="André Martins emblem" id="hero-content-emblem" />
+  </div>
+</header>

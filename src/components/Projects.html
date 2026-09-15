@@ -1,53 +1,94 @@
-<section class="container" id="projects">
+<section class="container" id="projects" aria-labelledby="projects-heading">
   <h2 class="container-heading" id="projects-heading">Projects</h2>
   <p class="container-text container-text-center-md">These are some of my personal projects: </p>
+
   <div id="projects-grid">
-    <div class="projects-card" id="project-grid-1">
-      <img class="projects-card-img" src="../mathlib-api.webp
-      " id="project-grid-1-img" alt="print screen of MathLib API">
-      <div class="projects-card-inner">
-        <h3 class="projects-card-inner-heading">MathLib API</h3>
+
+    <!-- Project 1 - MathLib API -->
+    <article class="project-card" id="project-grid-1">
+      <picture>
+        <source srcset="../mathlib-api.webp" type="image/webp" />
+        <img class="project-card-img" src="../mathlib-api.png" id="project-grid-1-img"
+          alt="Postman request demonstrating HTTP endpoints and JSON responses for MathLib API" loading="lazy" />
+      </picture>
+      <div class="project-card-body">
+        <h3 class="project-card-body-heading">MathLib API</h3>
         <p>A lightweight HTTP API built with Java, exposing a native mathematical library written in C through JNA.
         </p>
-        <span class="projects-card-inner-topics">Java · JNA · HTTP · JSON · Docker</span>
+        <ul aria-label="Tech stack" class="project-card-body-topics">
+          <li>Java</li>
+          <li>JNA</li>
+          <li>HTTP</li>
+          <li>JSON</li>
+          <li>Docker</li>
+        </ul>
       </div>
-      <div class="projects-card-inner">
-        <a class="btn projects-card-inner-btn" target="_blank" href="https://github.com/amartinsmg/MathlibAPI"
-          role="button"><i class="fab fa-github"></i> View project</a>
-      </div>
-    </div>
-    <div class="projects-divider"></div>
-    <div class="projects-card" id="project-grid-2">
-      <img class="projects-card-img" src="../cnn-comparasion.webp" id="project-grid-2-img"
-        alt="print screen of CNN Architecture Comparison">
-      <div class="projects-card-inner">
-        <h3 class="projects-card-inner-heading">CNN Architecture Comparison</h3>
+      <footer class="project-card-footer">
+        <a class="btn project-card-footer-btn" target="_blank" rel="noopener noreferrer"
+          href="https://github.com/amartinsmg/MathlibAPI" aria-label="View MathLib API repository on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i> View project
+        </a>
+      </footer>
+    </article>
+
+    <hr class="projects-divider">
+
+
+    <!-- Project 2 - CNN Architecture Comparison -->
+    <article class="project-card" id="project-grid-2">
+      <picture>
+        <source srcset="../cnn-comparasion.webp" type="image/webp" />
+        <img class="project-card-img" src="../cnn-comparasion.png" id="project-grid-2-img"
+          alt="Performance charts comparing ResNet50, DenseNet121, and EfficientNetB0" loading="lazy" />
+      </picture>
+      <div class="project-card-body">
+        <h3 class="project-card-body-heading">CNN Architecture Comparison</h3>
         <p>My Computer Engineering thesis comparing ResNet50, DenseNet121, and EfficientNetB0 for pneumonia
           classification using transfer learning and controlled experiments.
         </p>
-        <span class="projects-card-inner-topics">Python · TensorFlow · CNN · Data Analysis · DVC
-          </sapn>
+        <ul aria-label="Tech stack" class="project-card-body-topics">
+          <li>Python</li>
+          <li>TensorFlow</li>
+          <li>CNN</li>
+          <li>Data Analysis</li>
+          <li>DVC</li>
+        </ul>
       </div>
-      <div class="projects-card-inner">
-        <a class="btn projects-card-inner-btn" target="_blank"
-          href="https://github.com/amartinsmg/classification-of-medical-images-using-cnn" role="button"><i
-            class="fab fa-github"></i> View project</a>
-      </div>
-    </div>
-    <div class="projects-divider"></div>
-    <div class="projects-card" id="project-grid-3">
-      <img class="projects-card-img" src="../qfcalculator.webp" id="project-grid-3-img"
-        alt="print screen of Qudratic Function Calculator">
-      <div class="projects-card-inner">
-        <h3 class="projects-card-inner-heading">Quadratic Function Calculator</h3>
+      <footer class="project-card-footer">
+        <a class="btn project-card-footer-btn" target="_blank" rel="noopener noreferrer"
+          href="https://github.com/amartinsmg/classification-of-medical-images-using-cnn"
+          aria-label="View CNN Architecture Comparison repository on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i> View project</a>
+      </footer>
+    </article>
+
+    <hr class="projects-divider">
+
+
+    <!-- Project 3 - Quadratic Function Calculator -->
+    <article class="project-card" id="project-grid-3">
+      <picture>
+        <source srcset="../qfcalculator.webp" type="image/webp" />
+        <img class="project-card-img" src="../qfcalculator.png" id="project-grid-3-img"
+          alt="User interface of Quadratic Function Calculator application" loading="lazy" />
+      </picture>
+      <div class="project-card-body">
+        <h3 class="project-card-body-heading">Quadratic Function Calculator</h3>
         <p>A TypeScript web application redesigned around OOP and domain-oriented architecture, separating mathematical
           logic from UI and visualization.
         </p>
-        <span class="projects-card-inner-topics">TypeScript · OOP · Architecture · Symbolic Computation</span>
+        <ul aria-label="Tech stack" class="project-card-body-topics">
+          <li>TypeScript</li>
+          <li>OOP</li>
+          <li>Architecture</li>
+          <li>Symbolic Computation</li>
+        </ul>
       </div>
-      <div class="projects-card-inner">
-        <a class="btn projects-card-inner-btn" target="_blank" href="https://github.com/amartinsmg/QuadraticFCalculator"
-          role="button"><i class="fab fa-github"></i> View project</a>
-      </div>
-    </div>
+      <footer class="project-card-footer">
+        <a class="btn project-card-footer-btn" target="_blank" rel="noopener noreferrer"
+          href="https://github.com/amartinsmg/QuadraticFCalculator"
+          aria-label="View Quadratic Function Calculator repository on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i> View project</a>
+      </footer>
+    </article>
 </section>

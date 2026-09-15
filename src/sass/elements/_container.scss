@@ -5,6 +5,7 @@
   width: 90%;
   margin: auto;
   padding: 3.5rem 0;
+  font-size: 1.03rem;
 
   @include m.f-col;
   gap: 1rem;
@@ -24,7 +25,7 @@
 
     text-align: justify;
     text-justify: distribute;
-    line-height: 150%;
+    line-height: 160%;
 
     &-center {
       text-align: center;
@@ -44,12 +45,6 @@
 
     &-text-center-md {
       text-align: center;
-    }
-
-    &-bar {
-      @include m.separator-bar;
-      width: min(30rem, 60%);
-      margin: 0 auto;
     }
   }
 

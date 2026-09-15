@@ -25,9 +25,12 @@
       @include m.f-col;
       gap: 0.8rem;
 
+      font-size: 1.1rem;
+
       &-heading {
         font: v.$font-4;
         font-size: 1.8rem;
+        display: inline-flex;
 
         &-text-cursor {
           display: inline-block;
@@ -39,7 +42,7 @@
       }
     }
 
-    &-fig {
+    &-emblem {
       height: 15rem;
       max-width: 100%;
       object-fit: scale-down;

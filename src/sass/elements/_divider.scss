@@ -1,0 +1,14 @@
+@use "../variables" as v;
+@use "../mixins" as m;
+
+.divider-bar {
+  @include m.separator-bar;
+  width: min(30rem, 60%);
+  margin: 0 auto;
+  
+  opacity: 0;
+  
+  @media screen and (min-width: 992px) {
+    opacity: 1;
+  }
+}

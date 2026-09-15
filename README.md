@@ -5,6 +5,7 @@ This is the source file of my personal portfolio.
 ---
 
 ## 💻 Technologies Used
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![SASS](https://img.shields.io/badge/SASS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
@@ -14,5 +15,8 @@ This is the source file of my personal portfolio.
 
 ---
 
-## 📜 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+## 📜 License & Credits
+
+- **Source Code:** Available under the [MIT License](LICENSE).
+- **Content & Text:** Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+- **[Background Image](./public/galaxy.webp):** Circinus Galaxy photo courtesy of NASA, ESA, and A. Wilson (University of Maryland).
