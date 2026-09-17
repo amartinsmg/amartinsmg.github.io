@@ -51,8 +51,6 @@
 
     font: v.$font-3;
 
-
-
     a:hover {
       color: v.$second-color;
     }
@@ -63,6 +61,8 @@
       gap: 0.5em;
 
       &-title {
+        width: max-content;
+
         color: v.$neutral-color-2;
       }
     }
