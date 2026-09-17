@@ -2,6 +2,9 @@
 @use "../variables" as v;
 
 #projects {
+  @include m.f-col;
+  align-items: center;
+
   &-grid {
     @include m.f-col;
     justify-content: center;
@@ -97,6 +100,9 @@
 
   @media screen and (min-width: 1200px) {
     &-grid {
+      max-width: 1200px;
+      width: 100%;
+
       grid-template: 1fr / repeat(3, 1fr);
     }
   }
