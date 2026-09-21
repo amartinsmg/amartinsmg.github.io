@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://amartinsmg.github.io/sitemap.xml
