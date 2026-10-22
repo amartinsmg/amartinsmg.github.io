@@ -1,6 +1,117 @@
 <section id="skills" class="container" aria-labelledby="skills-heading">
-  <h2 class="container-heading" id="skills-heading">Skills</h2>
+  <h2 class="container-heading" id="skills-heading">Competências</h2>
+
   <div id="skills-content">
+    <div id="skills-content-carousel" class="carousel-wrapper">
+      <!-- <button class="carousel-arrow prev" aria-label="Anterior">◄</button> -->
+      <ul class="carousel">
+
+        <!-- Card Java -->
+        <li>
+          <article class="skill-card container-text" id="card-java">
+            <h3 class="skill-card-icon"><i class="devicon-java-plain" aria-hidden="true"></i></h3>
+            <h3 class="skill-card-heading">Java</h3>
+            <div class="container-text skill-card-text">
+              <p>
+                Meu foco atual é o desenvolvimento de back-end. Uso Java para criar APIs HTTP, lidar com dados JSON,
+                estruturar a lógica das aplicações e explorar o desenvolvimento de back-end sem depender muito de
+                frameworks. Também uso Java Native Access (JNA) para integrar aplicações Java a bibliotecas nativas em C.
+              </p>
+            </div>
+            <pre class="skill-card-code"><code>System.out.println("Construindo sistemas de back-end.");</code></pre>
+          </article>
+        </li>
+
+        <!-- Card C / C++ -->
+        <li>
+          <article class="skill-card container-text" id="card-c">
+            <h3 class="skill-card-icon"><i class="devicon-c-plain" aria-hidden="true"></i></h3>
+            <h3 class="skill-card-heading">C / C++</h3>
+            <div class="container-text skill-card-text">
+              <p>
+                Uso C para explorar programação de baixo nível, algoritmos matemáticos, comportamento da memória,
+                entrada e saída de arquivos, bibliotecas compartilhadas e interação com bancos de dados. Também uso C
+                como base para experimentos relacionados a desempenho e comportamento em nível de sistema.
+              </p>
+            </div>
+            <pre class="skill-card-code"><code>printf("Entendendo como os sistemas funcionam.\n");</code></pre>
+          </article>
+        </li>
+
+
+        <!-- Card Python -->
+        <li>
+          <article class="skill-card container-text" id="card-python">
+            <h3 class="skill-card-icon"><i class="devicon-python-plain" aria-hidden="true"></i></h3>
+            <h3 class="skill-card-heading">Python</h3>
+            <div class="container-text skill-card-text">
+              <p>
+                Uso Python para computação numérica, processamento de dados, experimentação e aprendizado de máquina.
+                Meus projetos incluem computação científica e análise com bibliotecas como NumPy, Pandas, SciPy e TensorFlow.
+              </p>
+            </div>
+            <pre class="skill-card-code"><code>print("Explorando problemas computacionais.")</code></pre>
+          </article>
+        </li>
+
+        <!-- Card JS / TS -->
+        <li>
+          <article class="skill-card container-text" id="card-javascript">
+            <h3 class="skill-card-icon"><i class="devicon-javascript-plain" aria-hidden="true"></i></h3>
+            <h3 class="skill-card-heading">JavaScript / TypeScript</h3>
+            <div class="container-text skill-card-text">
+              <p>
+                Uso JavaScript e TypeScript em aplicações web, lógica de aplicações e interfaces interativas. Minha
+                experiência também inclui estruturar aplicações com abordagens orientadas a objetos e ao domínio.
+              </p>
+            </div>
+            <pre class="skill-card-code"><code>console.log("Desenvolvendo e experimentando.");</code></pre>
+          </article>
+        </li>
+
+        <!-- Card Databases -->
+        <li>
+
+          <article class="skill-card container-text" id="card-postgresql">
+            <h3 class="skill-card-icon"><i class="devicon-postgresql-plain" aria-hidden="true"></i></h3>
+            <h3 class="skill-card-heading">Bancos de dados</h3>
+            <div class="container-text skill-card-text">
+              <p>
+                Trabalho com bancos de dados relacionais e SQL, especialmente PostgreSQL e SQLite. Meus projetos exploram
+                interação com bancos de dados, persistência, execução de consultas, transações e diferentes estratégias
+                para gravar dados com eficiência.
+              </p>
+            </div>
+            <pre class="skill-card-code"><code>SELECT * FROM experiments;</code></pre>
+          </article>
+        </li>
+
+        <!-- Card Performance & Systems -->
+        <li>
+
+          <article class="skill-card container-text" id="card-cuda">
+            <h3 class="skill-card-icon"><i class="devicon-llvm-plain" aria-hidden="true"></i></h3>
+            <h3 class="skill-card-heading">Desempenho e sistemas</h3>
+            <div class="container-text skill-card-text">
+              <p>
+                Tenho interesse em entender como o software interage com o sistema subjacente e como as escolhas de
+                implementação afetam o tempo de execução, a memória, a entrada e saída, as operações de banco de dados
+                e o desempenho computacional.
+              </p>
+              <p>
+                Exploro esses conceitos por meio de benchmarks e experimentos com execução na CPU, OpenMP, CUDA,
+                entrada e saída de arquivos, transações de banco de dados, processamento em lotes e diferentes
+                ambientes de execução de linguagens de programação.
+              </p>
+            </div>
+            <pre class="skill-card-code"><code>computação → execução → entrada e saída → comportamento do sistema → desempenho</code></pre>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="skills-content-desktop">
 
     <input type="radio" class="skill-radio" name="skill" id="radio-java" checked />
     <input type="radio" class="skill-radio" name="skill" id="radio-c" />
@@ -10,42 +121,42 @@
     <input type="radio" class="skill-radio" name="skill" id="radio-cuda" />
 
     <fieldset class="skills-fieldset">
-      <legend class="sr-only">Select a skill to display details</legend>
-      <div id="skills-content-labels" role="group" aria-label="Skill selection icons">
+      <legend class="sr-only">Selecione uma competência para ver os detalhes</legend>
+      <div id="skills-content-desktop-labels" role="group" aria-label="Ícones de seleção de competências">
         <label class="skill-label" for="radio-java" aria-label="Java">
           <i class="devicon-java-plain" aria-hidden="true"></i>
         </label>
-        <label class="skill-label" for="radio-c" aria-label="C or C++">
+        <label class="skill-label" for="radio-c" aria-label="C ou C++">
           <i class="devicon-c-plain" aria-hidden="true"></i>
         </label>
         <label class="skill-label" for="radio-python" aria-label="Python">
           <i class="devicon-python-plain" aria-hidden="true"></i>
         </label>
-        <label class="skill-label" for="radio-javascript" aria-label="JavaScript and TypeScript">
+        <label class="skill-label" for="radio-javascript" aria-label="JavaScript e TypeScript">
           <i class="devicon-javascript-plain" aria-hidden="true"></i>
         </label>
-        <label class="skill-label" for="radio-postgresql" aria-label="Databases and SQL">
+        <label class="skill-label" for="radio-postgresql" aria-label="Bancos de dados e SQL">
           <i class="devicon-postgresql-plain" aria-hidden="true"></i>
         </label>
-        <label class="skill-label" for="radio-cuda" aria-label="Performance and Systems">
+        <label class="skill-label" for="radio-cuda" aria-label="Desempenho e sistemas">
           <i class="devicon-llvm-plain" aria-hidden="true"></i>
         </label>
       </div>
     </fieldset>
 
-    <div id="skills-content-cards" aria-live="polite">
+    <div id="skills-content-desktop-cards" aria-live="polite">
 
       <!-- Card Java -->
       <article class="skill-card container-text" id="card-java">
         <h3 class="skill-card-heading">Java</h3>
         <div class="container-text skill-card-text">
           <p>
-            My current focus for backend development. I use Java to build HTTP APIs, handle JSON data, structure
-            application logic, and explore backend development without relying heavily on frameworks. I also work with
-            Java Native Access (JNA) to integrate Java applications with native C libraries.
+            Meu foco atual é o desenvolvimento de back-end. Uso Java para criar APIs HTTP, lidar com dados JSON,
+            estruturar a lógica das aplicações e explorar o desenvolvimento de back-end sem depender muito de
+            frameworks. Também uso Java Native Access (JNA) para integrar aplicações Java a bibliotecas nativas em C.
           </p>
         </div>
-        <pre class="skill-card-code"><code>System.out.println("Building backend systems.");</code></pre>
+        <pre class="skill-card-code"><code>System.out.println("Construindo sistemas de back-end.");</code></pre>
       </article>
 
       <!-- Card C / C++ -->
@@ -53,46 +164,46 @@
         <h3 class="skill-card-heading">C / C++</h3>
         <div class="container-text skill-card-text">
           <p>
-            I use C to explore lower-level programming, mathematical algorithms, memory behavior, file I/O, shared
-            libraries, and database interaction. I also use C as a foundation for experiments involving performance and
-            system-level behavior.
+            Uso C para explorar programação de baixo nível, algoritmos matemáticos, comportamento da memória,
+            entrada e saída de arquivos, bibliotecas compartilhadas e interação com bancos de dados. Também uso C
+            como base para experimentos relacionados a desempenho e comportamento em nível de sistema.
           </p>
         </div>
-        <pre class="skill-card-code"><code>printf("Understanding how systems work.\n");</code></pre>
+        <pre class="skill-card-code"><code>printf("Entendendo como os sistemas funcionam.\n");</code></pre>
       </article>
-      
+
       <!-- Card Python -->
       <article class="skill-card container-text" id="card-python">
         <h3 class="skill-card-heading">Python</h3>
         <div class="container-text skill-card-text">
           <p>
-            I use Python for numerical computing, data processing, experimentation, and machine learning. My projects
-            include scientific computing and analysis using libraries such as NumPy, Pandas, SciPy, and TensorFlow.
+            Uso Python para computação numérica, processamento de dados, experimentação e aprendizado de máquina.
+            Meus projetos incluem computação científica e análise com bibliotecas como NumPy, Pandas, SciPy e TensorFlow.
           </p>
         </div>
-        <pre class="skill-card-code"><code>print("Exploring computational problems.")</code></pre>
+        <pre class="skill-card-code"><code>print("Explorando problemas computacionais.")</code></pre>
       </article>
-      
+
       <!-- Card JS / TS -->
       <article class="skill-card container-text" id="card-javascript">
-        <h3 class="skill-card-heading">Javascript / TypeScript</h3>
+        <h3 class="skill-card-heading">JavaScript / TypeScript</h3>
         <div class="container-text skill-card-text">
           <p>
-            I use JavaScript and TypeScript for web applications, application logic, and interactive interfaces. My
-            experience also includes structuring applications with object-oriented and domain-oriented approaches.
+            Uso JavaScript e TypeScript em aplicações web, lógica de aplicações e interfaces interativas. Minha
+            experiência também inclui estruturar aplicações com abordagens orientadas a objetos e ao domínio.
           </p>
         </div>
-        <pre class="skill-card-code"><code>console.log("Building and experimenting.");</code></pre>
+        <pre class="skill-card-code"><code>console.log("Desenvolvendo e experimentando.");</code></pre>
       </article>
 
       <!-- Card Databases -->
       <article class="skill-card container-text" id="card-postgresql">
-        <h3 class="skill-card-heading">Databases</h3>
+        <h3 class="skill-card-heading">Bancos de dados</h3>
         <div class="container-text skill-card-text">
           <p>
-            I work with relational databases and SQL, particularly PostgreSQL and SQLite. My projects explore database
-            interaction, persistence, query execution, transactions, and different strategies for writing data
-            efficiently.
+            Trabalho com bancos de dados relacionais e SQL, especialmente PostgreSQL e SQLite. Meus projetos exploram
+            interação com bancos de dados, persistência, execução de consultas, transações e diferentes estratégias
+            para gravar dados com eficiência.
           </p>
         </div>
         <pre class="skill-card-code"><code>SELECT * FROM experiments;</code></pre>
@@ -100,18 +211,20 @@
 
       <!-- Card Performance & Systems -->
       <article class="skill-card container-text" id="card-cuda">
-        <h3 class="skill-card-heading">Performance & Systems</h3>
+        <h3 class="skill-card-heading">Desempenho e sistemas</h3>
         <div class="container-text skill-card-text">
           <p>
-            I’m interested in understanding how software interacts with the underlying system and how implementation
-            choices affect runtime, memory, I/O, database operations, and computational performance.
+            Tenho interesse em entender como o software interage com o sistema subjacente e como as escolhas de
+            implementação afetam o tempo de execução, a memória, a entrada e saída, as operações de banco de dados
+            e o desempenho computacional.
           </p>
           <p>
-            I explore these concepts through benchmarking and experimentation involving CPU execution, OpenMP, CUDA,
-            file I/O, database transactions, batching, and different programming language runtimes.
+            Exploro esses conceitos por meio de benchmarks e experimentos com execução na CPU, OpenMP, CUDA,
+            entrada e saída de arquivos, transações de banco de dados, processamento em lotes e diferentes
+            ambientes de execução de linguagens de programação.
           </p>
         </div>
-        <pre class="skill-card-code"><code>computation → execution → I/O → system behavior → performance</code></pre>
+        <pre class="skill-card-code"><code>computação → execução → entrada e saída → comportamento do sistema → desempenho</code></pre>
       </article>
 
     </div>

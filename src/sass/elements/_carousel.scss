@@ -1,0 +1,57 @@
+@use "../variables" as v;
+@use "../mixins" as m;
+
+
+.carousel-wrapper {
+    position: relative;
+
+
+    color: v.$primary-color;
+
+    .carousel {
+        @include m.f-row;
+        gap: min(4vw, 2rem);
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+
+        scroll-snap-type: x mandatory;
+        scroll-marker-group: after;
+        anchor-name: --targets-carousel;
+
+
+        li {
+            max-width: 70vw;
+
+            flex: 1 0 auto;
+            scroll-snap-align: center;
+
+            display: flex;
+            align-items: center;
+
+            list-style-type: none;
+        }
+
+        li::scroll-marker {
+            content: "";
+            height: .6em;
+            width: .6em;
+
+            border-radius: 100%;
+
+            background: v.$primary-color;
+        }
+    }
+
+
+    ::scroll-marker-group {
+        display: flex;
+        height: 2.4em;
+        gap: 0.6em;
+        place-content: center;
+        align-items: center;
+    }
+
+    li::scroll-marker:target-current {
+        background: v.$second-color;
+    }
+}

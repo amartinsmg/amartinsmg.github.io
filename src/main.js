@@ -29,7 +29,7 @@ function main() {
     TextCursor = document.querySelector(
       "#hero-content-text-heading-text-cursor"
     ),
-    str = "Hi, I'm André Martins.";
+    str = "Olá, sou André Martins.";
 
   writeText(str, WhoIAmEl, TextCursor);
 }

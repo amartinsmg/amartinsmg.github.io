@@ -5,76 +5,94 @@
   @include m.f-col;
   justify-content: start;
 
-  &-content {
-    @include m.f-col;
-    gap: 2.5rem;
+  .skill-card {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    border: 1px solid v.$neutral-color-3;
+    padding: 1.2rem 1rem;
+    border-radius: 1rem;
+    height: 100%;
 
-    .skill-radio {
-      position: absolute;
-      opacity: 0;
-      pointer-events: none;
+    &-icon {
+      @include m.heading-3;
+      font-size: 2.5rem;
     }
 
-    &-labels {
-      width: fit-content;
+    &-heading {
+      @include m.heading-3;
+    }
+
+    &-code {
+      font: v.$font-2;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-wrap: inherit;
+
+      code {
+        font: inherit;
+      }
+    }
+  }
+
+  &-content {
+   &-carousel {
+      max-width: 50rem;
       margin: 0 auto;
 
-      display: grid;
-      grid-template: 1fr 1fr / repeat(3, 1fr);
-      place-items: center;
-      gap: 3rem;
-
-      .skill-label {
-        color: v.$neutral-color-2;
-        font-size: 2.5rem;
-        cursor: pointer;
-
-        &:hover {
-          color: v.$neutral-color-1;
-        }
-      }
-
-      @media screen and (min-width: 768px) {
-        @include m.f-row;
-        justify-content: center;
+      li {
+        max-width: 85%;
       }
     }
 
-    &-cards {
-      min-height: 24rem;
+    @media screen and (min-width: 768px) {
+      .skill-card {
+        padding: 3rem 2rem;
+      }
+     display: none;
+    }
+  }
+
+  &-content-desktop {
+    display: none;
+
+    @media screen and (min-width: 992px) {
+      @include m.f-col;
+      gap: 2.5rem;
+      justify-content: center;
+
+      .skill-radio {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+      }
 
       .skill-card {
         display: none;
+        border: none;
+        padding: 0;
+      }
 
-        flex-direction: column;
-        justify-content: center;
-        gap: 1.5rem;
+      &-labels {
+        width: fit-content;
+        margin: 0 auto;
 
-        &-heading {
-          @include m.heading-3;
-        }
+          @include m.f-row;
+          justify-content: center;
+        gap: 3rem;
 
-        &-code {
-          font: v.$font-2;
-          text-align: center;
-          letter-spacing: 0.04em;
-          text-wrap: inherit;
+        .skill-label {
+          color: v.$neutral-color-2;
+          font-size: 2.5rem;
+          cursor: pointer;
 
-          code {
-            font: inherit;
+          &:hover {
+            color: v.$neutral-color-1;
           }
         }
       }
 
-      @media screen and (min-width: 576px) {
-        min-height: 19rem;
-      }
-
-      @media screen and (min-width: 768px) {
-        min-height: 16rem;
-      }
-
-      @media screen and (min-width: 992px) {
+      &-cards {
         min-height: 16.5rem;
       }
     }
@@ -82,11 +100,14 @@
 }
 
 @mixin showSkill($name) {
-  #radio-#{$name}:checked~.skills-fieldset #skills-content-labels label[for="radio-#{$name}"] {
+  #radio-#{$name}:checked
+    ~ .skills-fieldset
+    #skills-content-desktop-labels
+    label[for="radio-#{$name}"] {
     color: v.$second-color;
   }
 
-  #radio-#{$name}:checked~#skills-content-cards #card-#{$name} {
+  #radio-#{$name}:checked ~ #skills-content-desktop-cards #card-#{$name} {
     display: flex;
   }
 }
