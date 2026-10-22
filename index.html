@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <!-- Meta Tags for SEO -->
@@ -9,9 +9,9 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://amartinsmg.github.io/">
 
-  <title>André Martins | Computer Engineering Student Portfolio</title>
+  <title>André Martins | Portfólio de Engenharia da Computação</title>
   <meta name="description"
-    content="Portfolio of André Martins, Computer Engineering student. Projects, software development, and technical skills.">
+    content="Portfólio de André Martins, estudante de Engenharia da Computação. Projetos, desenvolvimento de software e competências técnicas.">
 
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 
@@ -23,23 +23,23 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <script type="module" crossorigin src="./assets/index-B_8DAb6m.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-TF4eTcuI.css">
+  <script type="module" crossorigin src="./assets/index-kF4aBAJB.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CDJ6QSMS.css">
 </head>
 
 <body>
   <header id="page-header">
   <!-- Brand / Logo -->
   <div id="page-header-brand">
-    <button type="button" class="to-top" aria-label="Scroll to top">
-      <img id="page-header-logo" src="../logo-light.svg" alt="André Martins Logo" />
+    <button type="button" class="to-top" aria-label="Voltar ao topo">
+      <img id="page-header-logo" src="../logo-light.svg" alt="Logotipo de André Martins" />
     </button>
   </div>
 
   <!-- Main Navigation -->
-  <nav id="page-header-navbar" aria-label="Main Navigation">
+  <nav id="page-header-navbar" aria-label="Navegação principal">
     <!-- Toggle CSS for Menu Mobile -->
-    <input id="page-header-navbar-toggle" type="checkbox" name="menu-toggle" aria-label="Toggle navigation menu" />
+    <input id="page-header-navbar-toggle" type="checkbox" name="menu-toggle" aria-label="Alternar menu de navegação" />
     <label id="page-header-navbar-menu" for="page-header-navbar-toggle" aria-hidden="true">
       <div id="page-header-navbar-menu-icon"></div>
     </label>
@@ -47,19 +47,19 @@
     <!-- List of Links -->
     <ul id="page-header-navbar-ul">
       <li>
-        <a href="#">Home</a>
+        <a href="#">Início</a>
       </li>
       <li>
-        <a href="#about">About</a>
+        <a href="#about">Sobre</a>
       </li>
       <li>
-        <a href="#skills">Skills</a>
+        <a href="#skills">Competências</a>
       </li>
       <li>
-        <a href="#projects">Projects</a>
+        <a href="#projects">Projetos</a>
       </li>
       <li>
-        <a href="#social">Social</a>
+        <a href="#social">Redes sociais</a>
       </li>
     </ul>
   </nav>
@@ -72,52 +72,159 @@
       <h1 id="hero-content-text-heading">
 
         <!-- Static text for accessibility -->
-        <span class="sr-only">Hi, I'm André Martins.</span>
+        <span class="sr-only">Olá, sou André Martins.</span>
 
         <!-- Dynamic text with typewriter effect -->
         <span id="hero-content-text-heading-whoiam" aria-hidden="true"></span>
 
         <!-- Fallback text for users with JavaScript disabled -->
-        <noscript>Hi, I'm André Martins.</noscript>
+        <noscript>Olá, sou André Martins.</noscript>
 
         <!-- Cursor for typewriter effect -->
         <i id="hero-content-text-heading-text-cursor" class="blinker-effect" aria-hidden="true"></i>
       </h1>
       <p>
-        Backend systems, performance, and software engineering.
+        Sistemas de back-end, desempenho e engenharia de software.
       </p>
       <p>
-        Computer Engineering student focused on building efficient and reliable software.
+        Estudante de Engenharia da Computação, focado em criar software eficiente e confiável.
       </p>
     </div>
-    <img src="../emblem-light.svg" alt="André Martins emblem" id="hero-content-emblem" />
+    <img src="../emblem-light.svg" alt="Emblema de André Martins" id="hero-content-emblem" />
   </div>
 </header>
     <section id="about" class="container">
-  <h2 class="container-heading" id="about-heading">About</h2>
+  <h2 class="container-heading" id="about-heading">Sobre</h2>
   <div class="container-text" id="about-text">
     <p>
-      I'm a Computer Engineering student focused on backend
-      development, systems, algorithms, and computational
-      performance.
+      Sou estudante de Engenharia da Computação, com foco em desenvolvimento de back-end,
+      sistemas, algoritmos e desempenho computacional.
     </p>
     <p>
-      My current focus is backend development with Java,
-      while exploring the interaction between higher-level
-      applications and lower-level systems through projects
-      involving C, native libraries, HTTP APIs, databases,
-      and computational workloads.
+      Atualmente, meu foco é desenvolvimento de back-end com Java, enquanto exploro a interação
+      entre aplicações de alto nível e sistemas de baixo nível por meio de projetos envolvendo C,
+      bibliotecas nativas, APIs HTTP, bancos de dados e cargas de trabalho computacionais.
     </p>
     <p>
-      I enjoy understanding the fundamentals behind the
-      abstractions I use...
+      Gosto de compreender os fundamentos por trás das abstrações que utilizo...
     </p>
   </div>
 </section>
     <hr class="divider-bar">
     <section id="skills" class="container" aria-labelledby="skills-heading">
-  <h2 class="container-heading" id="skills-heading">Skills</h2>
+  <h2 class="container-heading" id="skills-heading">Competências</h2>
+
   <div id="skills-content">
+    <div id="skills-content-carousel" class="carousel-wrapper">
+      <!-- <button class="carousel-arrow prev" aria-label="Anterior">◄</button> -->
+      <ul class="carousel">
+
+        <!-- Card Java -->
+        <li>
+          <article class="skill-card container-text" id="card-java">
+            <h3 class="skill-card-icon"><i class="devicon-java-plain" aria-hidden="true"></i></h3>
+            <h3 class="skill-card-heading">Java</h3>
+            <div class="container-text skill-card-text">
+              <p>
+                Meu foco atual é o desenvolvimento de back-end. Uso Java para criar APIs HTTP, lidar com dados JSON,
+                estruturar a lógica das aplicações e explorar o desenvolvimento de back-end sem depender muito de
+                frameworks. Também uso Java Native Access (JNA) para integrar aplicações Java a bibliotecas nativas em C.
+              </p>
+            </div>
+            <pre class="skill-card-code"><code>System.out.println("Construindo sistemas de back-end.");</code></pre>
+          </article>
+        </li>
+
+        <!-- Card C / C++ -->
+        <li>
+          <article class="skill-card container-text" id="card-c">
+            <h3 class="skill-card-icon"><i class="devicon-c-plain" aria-hidden="true"></i></h3>
+            <h3 class="skill-card-heading">C / C++</h3>
+            <div class="container-text skill-card-text">
+              <p>
+                Uso C para explorar programação de baixo nível, algoritmos matemáticos, comportamento da memória,
+                entrada e saída de arquivos, bibliotecas compartilhadas e interação com bancos de dados. Também uso C
+                como base para experimentos relacionados a desempenho e comportamento em nível de sistema.
+              </p>
+            </div>
+            <pre class="skill-card-code"><code>printf("Entendendo como os sistemas funcionam.\n");</code></pre>
+          </article>
+        </li>
+
+
+        <!-- Card Python -->
+        <li>
+          <article class="skill-card container-text" id="card-python">
+            <h3 class="skill-card-icon"><i class="devicon-python-plain" aria-hidden="true"></i></h3>
+            <h3 class="skill-card-heading">Python</h3>
+            <div class="container-text skill-card-text">
+              <p>
+                Uso Python para computação numérica, processamento de dados, experimentação e aprendizado de máquina.
+                Meus projetos incluem computação científica e análise com bibliotecas como NumPy, Pandas, SciPy e TensorFlow.
+              </p>
+            </div>
+            <pre class="skill-card-code"><code>print("Explorando problemas computacionais.")</code></pre>
+          </article>
+        </li>
+
+        <!-- Card JS / TS -->
+        <li>
+          <article class="skill-card container-text" id="card-javascript">
+            <h3 class="skill-card-icon"><i class="devicon-javascript-plain" aria-hidden="true"></i></h3>
+            <h3 class="skill-card-heading">JavaScript / TypeScript</h3>
+            <div class="container-text skill-card-text">
+              <p>
+                Uso JavaScript e TypeScript em aplicações web, lógica de aplicações e interfaces interativas. Minha
+                experiência também inclui estruturar aplicações com abordagens orientadas a objetos e ao domínio.
+              </p>
+            </div>
+            <pre class="skill-card-code"><code>console.log("Desenvolvendo e experimentando.");</code></pre>
+          </article>
+        </li>
+
+        <!-- Card Databases -->
+        <li>
+
+          <article class="skill-card container-text" id="card-postgresql">
+            <h3 class="skill-card-icon"><i class="devicon-postgresql-plain" aria-hidden="true"></i></h3>
+            <h3 class="skill-card-heading">Bancos de dados</h3>
+            <div class="container-text skill-card-text">
+              <p>
+                Trabalho com bancos de dados relacionais e SQL, especialmente PostgreSQL e SQLite. Meus projetos exploram
+                interação com bancos de dados, persistência, execução de consultas, transações e diferentes estratégias
+                para gravar dados com eficiência.
+              </p>
+            </div>
+            <pre class="skill-card-code"><code>SELECT * FROM experiments;</code></pre>
+          </article>
+        </li>
+
+        <!-- Card Performance & Systems -->
+        <li>
+
+          <article class="skill-card container-text" id="card-cuda">
+            <h3 class="skill-card-icon"><i class="devicon-llvm-plain" aria-hidden="true"></i></h3>
+            <h3 class="skill-card-heading">Desempenho e sistemas</h3>
+            <div class="container-text skill-card-text">
+              <p>
+                Tenho interesse em entender como o software interage com o sistema subjacente e como as escolhas de
+                implementação afetam o tempo de execução, a memória, a entrada e saída, as operações de banco de dados
+                e o desempenho computacional.
+              </p>
+              <p>
+                Exploro esses conceitos por meio de benchmarks e experimentos com execução na CPU, OpenMP, CUDA,
+                entrada e saída de arquivos, transações de banco de dados, processamento em lotes e diferentes
+                ambientes de execução de linguagens de programação.
+              </p>
+            </div>
+            <pre class="skill-card-code"><code>computação → execução → entrada e saída → comportamento do sistema → desempenho</code></pre>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="skills-content-desktop">
 
     <input type="radio" class="skill-radio" name="skill" id="radio-java" checked />
     <input type="radio" class="skill-radio" name="skill" id="radio-c" />
@@ -127,42 +234,42 @@
     <input type="radio" class="skill-radio" name="skill" id="radio-cuda" />
 
     <fieldset class="skills-fieldset">
-      <legend class="sr-only">Select a skill to display details</legend>
-      <div id="skills-content-labels" role="group" aria-label="Skill selection icons">
+      <legend class="sr-only">Selecione uma competência para ver os detalhes</legend>
+      <div id="skills-content-desktop-labels" role="group" aria-label="Ícones de seleção de competências">
         <label class="skill-label" for="radio-java" aria-label="Java">
           <i class="devicon-java-plain" aria-hidden="true"></i>
         </label>
-        <label class="skill-label" for="radio-c" aria-label="C or C++">
+        <label class="skill-label" for="radio-c" aria-label="C ou C++">
           <i class="devicon-c-plain" aria-hidden="true"></i>
         </label>
         <label class="skill-label" for="radio-python" aria-label="Python">
           <i class="devicon-python-plain" aria-hidden="true"></i>
         </label>
-        <label class="skill-label" for="radio-javascript" aria-label="JavaScript and TypeScript">
+        <label class="skill-label" for="radio-javascript" aria-label="JavaScript e TypeScript">
           <i class="devicon-javascript-plain" aria-hidden="true"></i>
         </label>
-        <label class="skill-label" for="radio-postgresql" aria-label="Databases and SQL">
+        <label class="skill-label" for="radio-postgresql" aria-label="Bancos de dados e SQL">
           <i class="devicon-postgresql-plain" aria-hidden="true"></i>
         </label>
-        <label class="skill-label" for="radio-cuda" aria-label="Performance and Systems">
+        <label class="skill-label" for="radio-cuda" aria-label="Desempenho e sistemas">
           <i class="devicon-llvm-plain" aria-hidden="true"></i>
         </label>
       </div>
     </fieldset>
 
-    <div id="skills-content-cards" aria-live="polite">
+    <div id="skills-content-desktop-cards" aria-live="polite">
 
       <!-- Card Java -->
       <article class="skill-card container-text" id="card-java">
         <h3 class="skill-card-heading">Java</h3>
         <div class="container-text skill-card-text">
           <p>
-            My current focus for backend development. I use Java to build HTTP APIs, handle JSON data, structure
-            application logic, and explore backend development without relying heavily on frameworks. I also work with
-            Java Native Access (JNA) to integrate Java applications with native C libraries.
+            Meu foco atual é o desenvolvimento de back-end. Uso Java para criar APIs HTTP, lidar com dados JSON,
+            estruturar a lógica das aplicações e explorar o desenvolvimento de back-end sem depender muito de
+            frameworks. Também uso Java Native Access (JNA) para integrar aplicações Java a bibliotecas nativas em C.
           </p>
         </div>
-        <pre class="skill-card-code"><code>System.out.println("Building backend systems.");</code></pre>
+        <pre class="skill-card-code"><code>System.out.println("Construindo sistemas de back-end.");</code></pre>
       </article>
 
       <!-- Card C / C++ -->
@@ -170,46 +277,46 @@
         <h3 class="skill-card-heading">C / C++</h3>
         <div class="container-text skill-card-text">
           <p>
-            I use C to explore lower-level programming, mathematical algorithms, memory behavior, file I/O, shared
-            libraries, and database interaction. I also use C as a foundation for experiments involving performance and
-            system-level behavior.
+            Uso C para explorar programação de baixo nível, algoritmos matemáticos, comportamento da memória,
+            entrada e saída de arquivos, bibliotecas compartilhadas e interação com bancos de dados. Também uso C
+            como base para experimentos relacionados a desempenho e comportamento em nível de sistema.
           </p>
         </div>
-        <pre class="skill-card-code"><code>printf("Understanding how systems work.\n");</code></pre>
+        <pre class="skill-card-code"><code>printf("Entendendo como os sistemas funcionam.\n");</code></pre>
       </article>
-      
+
       <!-- Card Python -->
       <article class="skill-card container-text" id="card-python">
         <h3 class="skill-card-heading">Python</h3>
         <div class="container-text skill-card-text">
           <p>
-            I use Python for numerical computing, data processing, experimentation, and machine learning. My projects
-            include scientific computing and analysis using libraries such as NumPy, Pandas, SciPy, and TensorFlow.
+            Uso Python para computação numérica, processamento de dados, experimentação e aprendizado de máquina.
+            Meus projetos incluem computação científica e análise com bibliotecas como NumPy, Pandas, SciPy e TensorFlow.
           </p>
         </div>
-        <pre class="skill-card-code"><code>print("Exploring computational problems.")</code></pre>
+        <pre class="skill-card-code"><code>print("Explorando problemas computacionais.")</code></pre>
       </article>
-      
+
       <!-- Card JS / TS -->
       <article class="skill-card container-text" id="card-javascript">
-        <h3 class="skill-card-heading">Javascript / TypeScript</h3>
+        <h3 class="skill-card-heading">JavaScript / TypeScript</h3>
         <div class="container-text skill-card-text">
           <p>
-            I use JavaScript and TypeScript for web applications, application logic, and interactive interfaces. My
-            experience also includes structuring applications with object-oriented and domain-oriented approaches.
+            Uso JavaScript e TypeScript em aplicações web, lógica de aplicações e interfaces interativas. Minha
+            experiência também inclui estruturar aplicações com abordagens orientadas a objetos e ao domínio.
           </p>
         </div>
-        <pre class="skill-card-code"><code>console.log("Building and experimenting.");</code></pre>
+        <pre class="skill-card-code"><code>console.log("Desenvolvendo e experimentando.");</code></pre>
       </article>
 
       <!-- Card Databases -->
       <article class="skill-card container-text" id="card-postgresql">
-        <h3 class="skill-card-heading">Databases</h3>
+        <h3 class="skill-card-heading">Bancos de dados</h3>
         <div class="container-text skill-card-text">
           <p>
-            I work with relational databases and SQL, particularly PostgreSQL and SQLite. My projects explore database
-            interaction, persistence, query execution, transactions, and different strategies for writing data
-            efficiently.
+            Trabalho com bancos de dados relacionais e SQL, especialmente PostgreSQL e SQLite. Meus projetos exploram
+            interação com bancos de dados, persistência, execução de consultas, transações e diferentes estratégias
+            para gravar dados com eficiência.
           </p>
         </div>
         <pre class="skill-card-code"><code>SELECT * FROM experiments;</code></pre>
@@ -217,18 +324,20 @@
 
       <!-- Card Performance & Systems -->
       <article class="skill-card container-text" id="card-cuda">
-        <h3 class="skill-card-heading">Performance & Systems</h3>
+        <h3 class="skill-card-heading">Desempenho e sistemas</h3>
         <div class="container-text skill-card-text">
           <p>
-            I’m interested in understanding how software interacts with the underlying system and how implementation
-            choices affect runtime, memory, I/O, database operations, and computational performance.
+            Tenho interesse em entender como o software interage com o sistema subjacente e como as escolhas de
+            implementação afetam o tempo de execução, a memória, a entrada e saída, as operações de banco de dados
+            e o desempenho computacional.
           </p>
           <p>
-            I explore these concepts through benchmarking and experimentation involving CPU execution, OpenMP, CUDA,
-            file I/O, database transactions, batching, and different programming language runtimes.
+            Exploro esses conceitos por meio de benchmarks e experimentos com execução na CPU, OpenMP, CUDA,
+            entrada e saída de arquivos, transações de banco de dados, processamento em lotes e diferentes
+            ambientes de execução de linguagens de programação.
           </p>
         </div>
-        <pre class="skill-card-code"><code>computation → execution → I/O → system behavior → performance</code></pre>
+        <pre class="skill-card-code"><code>computação → execução → entrada e saída → comportamento do sistema → desempenho</code></pre>
       </article>
 
     </div>
@@ -236,8 +345,8 @@
 </section>
     <hr class="divider-bar">
     <section class="container" id="projects" aria-labelledby="projects-heading">
-  <h2 class="container-heading" id="projects-heading">Projects</h2>
-  <p class="container-text container-text-center-md">These are some of my personal projects: </p>
+  <h2 class="container-heading" id="projects-heading">Projetos</h2>
+  <p class="container-text container-text-center-md">Conheça alguns dos meus projetos pessoais:</p>
 
   <div id="projects-grid">
 
@@ -245,14 +354,13 @@
     <article class="project-card" id="project-grid-1">
       <picture>
         <source srcset="../mathlib-api.webp" type="image/webp" />
-        <img class="project-card-img" src="../mathlib-api.png" id="project-grid-1-img"
-          alt="Postman request demonstrating HTTP endpoints and JSON responses for MathLib API" loading="lazy" />
+        <img class="project-card-img" src="../mathlib-api.png" id="project-grid-1-img" alt="Requisição no Postman demonstrando endpoints HTTP e respostas JSON da MathLib API" loading="lazy" />
       </picture>
       <div class="project-card-body">
         <h3 class="project-card-body-heading">MathLib API</h3>
-        <p>A lightweight HTTP API built with Java, exposing a native mathematical library written in C through JNA.
+        <p>Uma API HTTP leve, construída em Java, que expõe uma biblioteca matemática nativa escrita em C através do JNA.
         </p>
-        <ul aria-label="Tech stack" class="project-card-body-topics">
+        <ul aria-label="Tecnologias" class="project-card-body-topics">
           <li>Java</li>
           <li>JNA</li>
           <li>HTTP</li>
@@ -261,9 +369,8 @@
         </ul>
       </div>
       <footer class="project-card-footer">
-        <a class="btn project-card-footer-btn" target="_blank" rel="noopener noreferrer"
-          href="https://github.com/amartinsmg/MathlibAPI" aria-label="View MathLib API repository on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View project
+        <a class="btn project-card-footer-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/amartinsmg/MathlibAPI" aria-label="Ver repositório da MathLib API no GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i> Ver projeto
         </a>
       </footer>
     </article>
@@ -275,27 +382,24 @@
     <article class="project-card" id="project-grid-2">
       <picture>
         <source srcset="../cnn-comparasion.webp" type="image/webp" />
-        <img class="project-card-img" src="../cnn-comparasion.png" id="project-grid-2-img"
-          alt="Performance charts comparing ResNet50, DenseNet121, and EfficientNetB0" loading="lazy" />
+        <img class="project-card-img" src="../cnn-comparasion.png" id="project-grid-2-img" alt="Gráficos de desempenho comparando ResNet50, DenseNet121 e EfficientNetB0" loading="lazy" />
       </picture>
       <div class="project-card-body">
-        <h3 class="project-card-body-heading">CNN Architecture Comparison</h3>
-        <p>My Computer Engineering thesis comparing ResNet50, DenseNet121, and EfficientNetB0 for pneumonia
-          classification using transfer learning and controlled experiments.
+        <h3 class="project-card-body-heading">Comparação de arquiteturas de CNN</h3>
+        <p>Meu trabalho de conclusão de curso em Engenharia da Computação compara ResNet50, DenseNet121 e EfficientNetB0
+          na classificação de pneumonia, usando aprendizado por transferência e experimentos controlados.
         </p>
         <ul aria-label="Tech stack" class="project-card-body-topics">
           <li>Python</li>
           <li>TensorFlow</li>
           <li>CNN</li>
-          <li>Data Analysis</li>
+          <li>Análise de dados</li>
           <li>DVC</li>
         </ul>
       </div>
       <footer class="project-card-footer">
-        <a class="btn project-card-footer-btn" target="_blank" rel="noopener noreferrer"
-          href="https://github.com/amartinsmg/classification-of-medical-images-using-cnn"
-          aria-label="View CNN Architecture Comparison repository on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View project</a>
+        <a class="btn project-card-footer-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/amartinsmg/classification-of-medical-images-using-cnn" aria-label="Ver repositório do projeto de comparação de arquiteturas de CNN no GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i> Ver projeto</a>
       </footer>
     </article>
 
@@ -306,38 +410,36 @@
     <article class="project-card" id="project-grid-3">
       <picture>
         <source srcset="../qfcalculator.webp" type="image/webp" />
-        <img class="project-card-img" src="../qfcalculator.png" id="project-grid-3-img"
-          alt="User interface of Quadratic Function Calculator application" loading="lazy" />
+        <img class="project-card-img" src="../qfcalculator.png" id="project-grid-3-img" alt="User interface of Quadratic Function Calculator application" loading="lazy" />
       </picture>
       <div class="project-card-body">
-        <h3 class="project-card-body-heading">Quadratic Function Calculator</h3>
-        <p>A TypeScript web application redesigned around OOP and domain-oriented architecture, separating mathematical
-          logic from UI and visualization.
+        <h3 class="project-card-body-heading">Calculadora de funções quadráticas</h3>
+        <p>Aplicação web em TypeScript reestruturada com programação orientada a objetos e arquitetura orientada ao
+          domínio, separando a lógica matemática da interface e da visualização.
         </p>
         <ul aria-label="Tech stack" class="project-card-body-topics">
           <li>TypeScript</li>
           <li>OOP</li>
-          <li>Architecture</li>
-          <li>Symbolic Computation</li>
+          <li>Arquitetura</li>
+          <li>Computação simbólica</li>
         </ul>
       </div>
       <footer class="project-card-footer">
-        <a class="btn project-card-footer-btn" target="_blank" rel="noopener noreferrer"
-          href="https://github.com/amartinsmg/QuadraticFCalculator"
-          aria-label="View Quadratic Function Calculator repository on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View project</a>
+        <a class="btn project-card-footer-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/amartinsmg/QuadraticFCalculator" aria-label="Ver repositório da Calculadora de funções quadráticas no GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i> Ver projeto</a>
       </footer>
     </article>
+  </div>
 </section>
     <footer class="container" id="social">
   <div id="social-top">
     <div id="social-top-monogram">
-      <img src="../monogram-light.svg" alt="André Martins monogram" />
+      <img src="../monogram-light.svg" alt="Monograma de André Martins" />
     </div>
     <div id="social-top-phrase">
       <p id="social-top-phrase-latin">Per aspera ad astra</p>
       <p id="social-top-phrase-translation">
-        &#8220;Through hardships to the stars&#8221;
+        &#8220;Por caminhos difíceis, até as estrelas&#8221;
       </p>
     </div>
   </div>
@@ -346,9 +448,9 @@
     <div id="social-bottom-name">
       <a target="_blank" href="https://github.com/amartinsmg" rel="noopener noreferrer" id="social-bottom-author">
         André Martins</a>
-      <p id="social-bottom-name-title">Computer Engineering</p>
+      <p id="social-bottom-name-title">Engenharia da Computação</p>
     </div>
-    <nav id="social-bottom-nav" aria-label="Social media profiles">
+    <nav id="social-bottom-nav" aria-label="Redes sociais">
       <ul id="social-nav-list">
         <li>
           <a href="https://github.com/amartinsmg" target="_blank" rel="noopener noreferrer" class="social-nav-inner">
@@ -377,7 +479,7 @@
       <small>
         &copy; 2026 André Martins &middot;
         <a href="https://github.com/amartinsmg/amartinsmg.github.io" target="_blank" rel="noopener noreferrer"
-          aria-label="View source code on GitHub">Source Code</a>
+          aria-label="Ver código-fonte no GitHub">Código-fonte</a>
       </small>
     </p>
   </div>
